@@ -1,14 +1,15 @@
-[gd_scene load_steps=26 format=3 uid="uid://ckyn8vlubco6p"]
+[gd_scene load_steps=26 format=3 uid="uid://b8fjerm1js8jt"]
 
 [ext_resource type="PackedScene" uid="uid://dnps7w4w1jh5a" path="res://models/lobbydraft.glb" id="1_tdota"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tdota"]
+points = PackedVector3Array(-0.686914, -1, -0.995243, 1, 0.994314, 1.45882, -1.1105, 0.997353, 1.46256, -0.687, 0.996421, -0.995409, -1.10937, -1, 1.46124, 1, -0.998029, -0.992817, 1, -0.998029, 1.45882, 1, 0.994314, -0.992817, -1.13007, -1.01957, 0.545836, -1.13007, 1.01586, 0.545836)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tdota"]
 diffuse_mode = 3
 specular_mode = 1
-albedo_color = Color(0.321569, 0.32549, 0.658824, 1)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tdota"]
-points = PackedVector3Array(-0.686914, -1, -0.995243, 1, 0.994314, 1.45882, -1.1105, 0.997353, 1.46256, -0.687, 0.996421, -0.995409, -1.10937, -1, 1.46124, 1, -0.998029, -0.992817, 1, -0.998029, 1.45882, 1, 0.994314, -0.992817, -1.13007, -1.01957, 0.545836, -1.13007, 1.01586, 0.545836)
+albedo_color = Color(0.215686, 0.0980392, 0, 1)
+metallic_specular = 0.43
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_n3vhk"]
 points = PackedVector3Array(-1, -1, -1, 1, 1, 1, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, -1, -1, -1, -1, 1, -1, 1, -1)
@@ -77,9 +78,6 @@ points = PackedVector3Array(0.996796, 0.9339, 0.996796, -0.999488, -1, -0.999488
 points = PackedVector3Array(0.996796, 0.9339, 0.996796, -0.999488, -1, -0.999488, -0.999488, -1, 0.999488, 0.999488, -1, -0.999488, -0.996796, 0.9339, -0.996796, 0.999488, -1, 0.999488, -0.996796, 0.9339, 0.996796, 0.996796, 0.9339, -0.996796)
 
 [node name="lobbydraft" instance=ExtResource("1_tdota")]
-
-[node name="Cube" parent="." index="0"]
-surface_material_override/0 = SubResource("StandardMaterial3D_tdota")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Cube" index="0"]
 
@@ -150,12 +148,12 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tdota")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_008/StaticBody3D" index="0"]
 shape = SubResource("ConvexPolygonShape3D_3nfot")
 
-[node name="Cube_010" parent="." index="9"]
+[node name="Cube_009" parent="." index="9"]
 surface_material_override/0 = SubResource("StandardMaterial3D_tdota")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Cube_010" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_009" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_010/StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_009/StaticBody3D" index="0"]
 shape = SubResource("ConvexPolygonShape3D_sueln")
 
 [node name="Cube_011" parent="." index="10"]
