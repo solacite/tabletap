@@ -13,6 +13,8 @@ config_version=5
 config/name="tabletap"
 run/main_scene="uid://dl8subouq8tno"
 config/features=PackedStringArray("4.4", "GL Compatibility")
+boot_splash/bg_color=Color(0.968627, 0.741176, 0.47451, 1)
+boot_splash/image="uid://cfc2q2pf04lw4"
 
 [display]
 
