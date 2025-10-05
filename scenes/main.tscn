@@ -1,11 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://dl8subouq8tno"]
 
-[ext_resource type="PackedScene" uid="uid://b8fjerm1js8jt" path="res://scenes/lobbydraft.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://8s556elrrtdg" path="res://scenes/player.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://c4v8tllpd3lw6" path="res://scenes/lobbydraft_2.tscn" id="2_sugp2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0wfyh"]
-sky_top_color = Color(0.3002, 0.436005, 0.735361, 1)
-sky_horizon_color = Color(0.771986, 0.883088, 0.962773, 1)
+sky_curve = 0.204906
+ground_bottom_color = Color(0.374396, 0.323902, 0.265344, 1)
 sun_angle_max = 11.4
 
 [sub_resource type="Sky" id="Sky_sugp2"]
@@ -19,10 +19,13 @@ sky = SubResource("Sky_sugp2")
 [node name="Node3D" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("2_0wfyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.3504, -39.0826, 64.5356)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80.6695, -36.9382, 51.4564)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jyhfs")
 
-[node name="lobbydraft" parent="." instance=ExtResource("1_o5qli")]
-transform = Transform3D(0.232003, 0, 0, 0, 0.232003, 0, 0, 0, 0.232003, -55.1752, -40.7356, 94.5608)
+[node name="lobbydraft3" parent="." instance=ExtResource("2_sugp2")]
+transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 0.101, -71.95, -38.99, 65.724)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.754231, -0.0155042, -0.656426, -0.014255, 0.999872, -0.00723716, 0.656455, 0.00389887, -0.754355, -78.8263, -34.2049, 51.0197)
