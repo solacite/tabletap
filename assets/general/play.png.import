@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw8cu8pb7sl7l"
-path="res://.godot/imported/shiba.png-4ca428d806bc96be676b4d2243deee6b.ctex"
+uid="uid://dkentbrp77uhr"
+path="res://.godot/imported/play.png-53626c5f2d1ff6ec56a72bd0d3ae8a29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/shiba.png"
-dest_files=["res://.godot/imported/shiba.png-4ca428d806bc96be676b4d2243deee6b.ctex"]
+source_file="res://assets/general/play.png"
+dest_files=["res://.godot/imported/play.png-53626c5f2d1ff6ec56a72bd0d3ae8a29.ctex"]
 
 [params]
 

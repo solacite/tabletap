@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctwrlblmy7t2h"
-path="res://.godot/imported/sparkle.png-af136f5f90e6793ac717cc01398cdab8.ctex"
+uid="uid://dwmyjm7g7bc7l"
+path="res://.godot/imported/plank.png-7dba140482fdb195fa6a50e9fdf0ad57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sparkle.png"
-dest_files=["res://.godot/imported/sparkle.png-af136f5f90e6793ac717cc01398cdab8.ctex"]
+source_file="res://assets/general/plank.png"
+dest_files=["res://.godot/imported/plank.png-7dba140482fdb195fa6a50e9fdf0ad57.ctex"]
 
 [params]
 

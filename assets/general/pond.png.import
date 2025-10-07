@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1v26yymf6ccq"
-path="res://.godot/imported/fakelily.png-8ed5c4adf2d867bb90d95bb7fc1ad7b3.ctex"
+uid="uid://ca77l2d0t5vyl"
+path="res://.godot/imported/pond.png-524b441203b90836f7fca7072b35d79c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fakelily.png"
-dest_files=["res://.godot/imported/fakelily.png-8ed5c4adf2d867bb90d95bb7fc1ad7b3.ctex"]
+source_file="res://assets/general/pond.png"
+dest_files=["res://.godot/imported/pond.png-524b441203b90836f7fca7072b35d79c.ctex"]
 
 [params]
 

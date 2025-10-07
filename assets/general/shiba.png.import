@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dekm2j055lyhm"
-path="res://.godot/imported/real_cover.png-be920858a2bfaa7b961a379644e3c881.ctex"
+uid="uid://cw8cu8pb7sl7l"
+path="res://.godot/imported/shiba.png-e550223963ee6f0a72ff3804f5d39c3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/real_cover.png"
-dest_files=["res://.godot/imported/real_cover.png-be920858a2bfaa7b961a379644e3c881.ctex"]
+source_file="res://assets/general/shiba.png"
+dest_files=["res://.godot/imported/shiba.png-e550223963ee6f0a72ff3804f5d39c3e.ctex"]
 
 [params]
 
