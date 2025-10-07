@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4kyso4fmj5h0"]
+
+[ext_resource type="Texture2D" uid="uid://bcid183vljbub" path="res://assets/menu.png" id="1_yqeox"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(543, 334)
+scale = Vector2(0.32, 0.32)
+texture = ExtResource("1_yqeox")
+metadata/_edit_group_ = true
