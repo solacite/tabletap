@@ -1,25 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://d4kyso4fmj5h0"]
+[gd_scene load_steps=5 format=3 uid="uid://d4kyso4fmj5h0"]
 
 [ext_resource type="Texture2D" uid="uid://bbceb3bia7ynb" path="res://assets/main menu/bg.png" id="1_yqeox"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yqeox"]
-load_path = "res://.godot/imported/start.png-077f57f2dce14ef910e6151aeab827c7.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vjb58"]
-load_path = "res://.godot/imported/start_hover.png-9d6bf8996be4d3a9d2bf0700dde82f04.ctex"
+[ext_resource type="Texture2D" uid="uid://cs7ftdomoe1gq" path="res://assets/main menu/buttons/start.png" id="2_con2f"]
+[ext_resource type="Texture2D" uid="uid://dlitgbsg64ok8" path="res://assets/main menu/buttons/start_hover.png" id="3_mhnvy"]
+[ext_resource type="Script" uid="uid://dn14os41g030d" path="res://scripts/slide_on_hover.gd" id="4_mhnvy"]
 
 [node name="Main Menu" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1124, 607)
+position = Vector2(1082, 607)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_yqeox")
-metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="TextureButton" parent="."]
-offset_left = -2172.0
-offset_top = 4.0
-offset_right = 3360.0
-offset_bottom = 2068.0
-texture_normal = SubResource("CompressedTexture2D_yqeox")
-texture_hover = SubResource("CompressedTexture2D_vjb58")
+[node name="Start" type="TextureButton" parent="."]
+offset_left = 904.0
+offset_top = 294.0
+offset_right = 2892.0
+offset_bottom = 702.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("2_con2f")
+texture_hover = ExtResource("3_mhnvy")
+script = ExtResource("4_mhnvy")
+
+[connection signal="mouse_entered" from="Start" to="Start" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Start" to="Start" method="_on_mouse_exited"]
