@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://d4kyso4fmj5h0"]
+[gd_scene load_steps=4 format=3 uid="uid://d4kyso4fmj5h0"]
 
 [ext_resource type="Texture2D" uid="uid://bbceb3bia7ynb" path="res://assets/main menu/bg.png" id="1_yqeox"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yqeox"]
+load_path = "res://.godot/imported/start.png-077f57f2dce14ef910e6151aeab827c7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vjb58"]
+load_path = "res://.godot/imported/start_hover.png-9d6bf8996be4d3a9d2bf0700dde82f04.ctex"
 
 [node name="Main Menu" type="Node2D"]
 
@@ -9,3 +15,11 @@ position = Vector2(1124, 607)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_yqeox")
 metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="TextureButton" parent="."]
+offset_left = -2172.0
+offset_top = 4.0
+offset_right = 3360.0
+offset_bottom = 2068.0
+texture_normal = SubResource("CompressedTexture2D_yqeox")
+texture_hover = SubResource("CompressedTexture2D_vjb58")
