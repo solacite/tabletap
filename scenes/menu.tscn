@@ -109,7 +109,7 @@ position = Vector2(669, 874)
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_rsfmq")
 autoplay = "default"
-frame_progress = 0.910377
+frame_progress = 0.387943
 
 [node name="Title" type="AnimatedSprite2D" parent="."]
 position = Vector2(538, 335)
@@ -117,7 +117,7 @@ rotation = -0.248407
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_i42df")
 autoplay = "default"
-frame_progress = 0.196397
+frame_progress = 0.783657
 
 [connection signal="mouse_entered" from="Start" to="Start" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Start" to="Start" method="_on_mouse_exited"]
