@@ -5,8 +5,12 @@
 
 [sub_resource type="Environment" id="Environment_jyhfs"]
 background_mode = 1
-background_color = Color(0.831373, 0.905882, 0.984314, 1)
-background_energy_multiplier = 0.8
+background_color = Color(0.694118, 0.831373, 0.972549, 1)
+background_energy_multiplier = 1.14
+ambient_light_color = Color(0.6889, 0.891437, 0.989599, 1)
+ambient_light_energy = 0.5
+tonemap_mode = 3
+tonemap_exposure = 0.83
 
 [node name="Node3D" type="Node3D"]
 
@@ -16,8 +20,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.4713, -29.9599, 59.5175)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jyhfs")
 
-[node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(-0.754231, -0.0155042, -0.656426, -0.014255, 0.999872, -0.00723716, 0.656455, 0.00389887, -0.754355, -78.8263, -34.2049, 51.0197)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.852408, -0.284088, 0.43897, -0.109613, 0.917961, 0.381226, -0.511258, 0.276843, -0.813617, -69.3484, -9.90481, 51.0197)
+light_energy = 1.192
+light_indirect_energy = 16.0
+light_specular = 0.0
 
 [node name="lobbydraftreal" parent="." instance=ExtResource("1_o5qli")]
 transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 0.101, -71.95, -38.99, 65.724)
