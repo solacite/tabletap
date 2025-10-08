@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp3ivbla8rfeu"]
+
+[ext_resource type="PackedScene" uid="uid://h203h4sm2nmv" path="res://models/lobby3/lobbydraft3.glb" id="1_tdota"]
+
+[node name="lobbydraft3" instance=ExtResource("1_tdota")]

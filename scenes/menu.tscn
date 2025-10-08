@@ -20,7 +20,7 @@
 [sub_resource type="SpriteFrames" id="SpriteFrames_rsfmq"]
 animations = [{
 "frames": [{
-"duration": 1.5,
+"duration": 1.8,
 "texture": ExtResource("11_mxgkd")
 }, {
 "duration": 0.8,
@@ -35,7 +35,7 @@ animations = [{
 "duration": 0.3,
 "texture": ExtResource("13_3dmrc")
 }, {
-"duration": 1.1,
+"duration": 0.7,
 "texture": ExtResource("12_g6gyw")
 }],
 "loop": true,
@@ -109,7 +109,7 @@ position = Vector2(669, 874)
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_rsfmq")
 autoplay = "default"
-frame_progress = 0.504503
+frame_progress = 0.910377
 
 [node name="Title" type="AnimatedSprite2D" parent="."]
 position = Vector2(538, 335)
@@ -117,7 +117,7 @@ rotation = -0.248407
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_i42df")
 autoplay = "default"
-frame_progress = 0.937274
+frame_progress = 0.196397
 
 [connection signal="mouse_entered" from="Start" to="Start" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Start" to="Start" method="_on_mouse_exited"]
