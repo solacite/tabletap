@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d4kyso4fmj5h0"]
+[gd_scene load_steps=19 format=3 uid="uid://d4kyso4fmj5h0"]
 
 [ext_resource type="Texture2D" uid="uid://bbceb3bia7ynb" path="res://assets/main menu/bg.png" id="1_yqeox"]
 [ext_resource type="Texture2D" uid="uid://cs7ftdomoe1gq" path="res://assets/main menu/buttons/start.png" id="2_con2f"]
@@ -10,6 +10,52 @@
 [ext_resource type="Texture2D" uid="uid://bwulvc6wo60kl" path="res://assets/main menu/buttons/help_hover.png" id="8_mj5lg"]
 [ext_resource type="Texture2D" uid="uid://chotgno7xspk" path="res://assets/main menu/buttons/credits.png" id="9_ufwb2"]
 [ext_resource type="Texture2D" uid="uid://3kgy06ucdkyi" path="res://assets/main menu/buttons/credits_hover.png" id="10_6cdou"]
+[ext_resource type="Texture2D" uid="uid://gl0wkwwlx8uj" path="res://assets/main menu/title char/title_char1.png" id="11_mxgkd"]
+[ext_resource type="Texture2D" uid="uid://dbm0wfra5dj3v" path="res://assets/main menu/title/title1.png" id="11_ufwb2"]
+[ext_resource type="Texture2D" uid="uid://cg1m4jmsqdbxq" path="res://assets/main menu/title/title2.png" id="12_6cdou"]
+[ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="12_g6gyw"]
+[ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="13_3dmrc"]
+[ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="14_81l6r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rsfmq"]
+animations = [{
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("11_mxgkd")
+}, {
+"duration": 0.8,
+"texture": ExtResource("12_g6gyw")
+}, {
+"duration": 0.6,
+"texture": ExtResource("13_3dmrc")
+}, {
+"duration": 0.8,
+"texture": ExtResource("14_81l6r")
+}, {
+"duration": 0.3,
+"texture": ExtResource("13_3dmrc")
+}, {
+"duration": 1.1,
+"texture": ExtResource("12_g6gyw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i42df"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ufwb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6cdou")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.6
+}]
 
 [node name="Main Menu" type="Node2D"]
 
@@ -57,6 +103,21 @@ scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("9_ufwb2")
 texture_hover = ExtResource("10_6cdou")
 script = ExtResource("4_mhnvy")
+
+[node name="Char" type="AnimatedSprite2D" parent="."]
+position = Vector2(669, 874)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_rsfmq")
+autoplay = "default"
+frame_progress = 0.504503
+
+[node name="Title" type="AnimatedSprite2D" parent="."]
+position = Vector2(538, 335)
+rotation = -0.248407
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_i42df")
+autoplay = "default"
+frame_progress = 0.937274
 
 [connection signal="mouse_entered" from="Start" to="Start" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Start" to="Start" method="_on_mouse_exited"]
