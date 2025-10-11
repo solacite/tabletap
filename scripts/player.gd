@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 const SPEED = 8.0
-const JUMP_VELOCITY = 7.0
+const JUMP_VELOCITY = 9.0
 var mouse_sens := 0.002
 var pitch := 0.0
 var tgt_pitch := 0.0
