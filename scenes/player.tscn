@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://8s556elrrtdg"]
+[gd_scene load_steps=8 format=3 uid="uid://8s556elrrtdg"]
 
 [ext_resource type="Script" uid="uid://c4ck3ib27roto" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="Texture2D" uid="uid://gl0wkwwlx8uj" path="res://assets/main menu/title char/title_char1.png" id="2_qlg0r"]
@@ -26,9 +26,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_u8vuu"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u8vuu"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_qlg0r"]
+size = Vector3(16.3312, 17.9609, 1.28979)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_3vyb7")
@@ -38,14 +37,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41002, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
 autoplay = "default"
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-visible = false
-mesh = SubResource("CapsuleMesh_u8vuu")
-skeleton = NodePath("")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-visible = false
-shape = SubResource("CapsuleShape3D_u8vuu")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.816757, 7.17766, 0.0352783)
+shape = SubResource("BoxShape3D_qlg0r")
 
 [node name="Pivot" type="Node3D" parent="."]
 
