@@ -16,10 +16,6 @@ config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0.968627, 0.741176, 0.47451, 1)
 boot_splash/image="uid://cfc2q2pf04lw4"
 
-[display]
-
-window/size/mode=4
-
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")

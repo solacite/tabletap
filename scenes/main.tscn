@@ -31,6 +31,7 @@ transform = Transform3D(0.129475, 0, 0, 0, 0.129475, 0, 0, 0, 0.129475, -89.1282
 safe_margin = 0.005
 
 [node name="CSG Boxes" type="Node3D" parent="."]
+visible = false
 
 [node name="Main Room" type="Node3D" parent="CSG Boxes"]
 
@@ -111,6 +112,7 @@ use_collision = true
 [node name="CSGBox3D15" type="CSGBox3D" parent="CSG Boxes/Second Room"]
 transform = Transform3D(11.5257, 0, -1.97842, 0, 11.45, 0, -10.5695, 0, -2.1574, -95.9482, -22.9423, 79.3269)
 visible = false
+calculate_tangents = false
 use_collision = true
 
 [node name="CSGBox3D16" type="CSGBox3D" parent="CSG Boxes/Second Room"]
