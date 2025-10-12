@@ -34,6 +34,7 @@ animations = [{
 script = ExtResource("1_3vyb7")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41002, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
 autoplay = "default"
 
@@ -49,4 +50,4 @@ shape = SubResource("CapsuleShape3D_u8vuu")
 [node name="Pivot" type="Node3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="Pivot"]
-transform = Transform3D(1, 0, 0, 0, 0.974636, 0.223794, 0, -0.223794, 0.974636, -0.131583, 13.5361, 22.5215)
+transform = Transform3D(1, 0, 0, 0, 0.974636, 0.223794, 0, -0.223794, 0.974636, -0.131583, 15.8414, 27.888)
