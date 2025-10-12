@@ -27,4 +27,4 @@ light_specular = 0.0
 transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 0.101, -71.95, -38.99, 65.724)
 
 [node name="Player" parent="." instance=ExtResource("2_0wfyh")]
-transform = Transform3D(0.230839, 0, 0, 0, 0.230839, 0, 0, 0, 0.230839, -89.1282, -31.5662, 61.953)
+transform = Transform3D(0.189556, 0, 0, 0, 0.189556, 0, 0, 0, 0.189556, -89.1282, -31.5662, 61.953)

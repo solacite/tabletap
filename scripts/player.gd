@@ -5,8 +5,8 @@ extends CharacterBody3D
 @export var mouse_sens := 0.002
 var pitch := 0.0
 var tgt_pitch := 0.0
-const PITCH_UP := deg_to_rad(80)
-const PITCH_DN := deg_to_rad(-30)
+const PITCH_UP := deg_to_rad(10)
+const PITCH_DN := deg_to_rad(-20)
 
 var pivot
 
