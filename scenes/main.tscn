@@ -12,7 +12,7 @@ ambient_light_energy = 0.5
 tonemap_mode = 3
 tonemap_exposure = 0.83
 
-[node name="Node3D" type="Node3D"]
+[node name="Main" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jyhfs")
@@ -27,4 +27,43 @@ light_specular = 0.0
 transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 0.101, -71.95, -38.99, 65.724)
 
 [node name="Player" parent="." instance=ExtResource("2_0wfyh")]
-transform = Transform3D(0.189556, 0, 0, 0, 0.189556, 0, 0, 0, 0.189556, -89.1282, -31.5662, 61.953)
+transform = Transform3D(0.173963, 0, 0, 0, 0.173963, 0, 0, 0, 0.173963, -89.1282, -31.5662, 61.953)
+
+[node name="CSG Boxes" type="Node3D" parent="."]
+
+[node name="Main Room" type="Node3D" parent="CSG Boxes"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSG Boxes/Main Room"]
+transform = Transform3D(32.4265, 0, 0, 0, 11.45, 0, 0, 0, 0.579723, -74.3893, -27.1521, 68.279)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSG Boxes/Main Room"]
+transform = Transform3D(-1.18966e-06, 0, 0.579723, 0, 11.45, 0, -27.2162, 0, -2.53405e-08, -59.4283, -27.1521, 59.4754)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSG Boxes/Main Room"]
+transform = Transform3D(25.4496, 0, 0, 0, 11.45, 0, 0, 0, 0.579723, -73.9513, -26.6968, 50.0624)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSG Boxes/Main Room"]
+transform = Transform3D(-3.85365e-07, 0, 0.579723, 0, 11.45, 0, -8.81613, 0, -2.53405e-08, -86.0578, -27.1521, 50.8698)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSG Boxes/Main Room"]
+transform = Transform3D(14.3098, 0, 0, 0, 11.45, 0, 0, 0, 0.579723, -93.1126, -27.1521, 55.0503)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="CSG Boxes/Main Room"]
+transform = Transform3D(3.98249, 0, 0, 0, 11.45, 0, 0, 0, 0.579723, -96.8452, -27.1521, 68.2148)
+visible = false
+use_collision = true
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="CSG Boxes/Main Room"]
+transform = Transform3D(-6.28568e-07, 0, 0.579723, 0, 11.45, 0, -14.38, 0, -2.53405e-08, -98.6222, -27.1521, 61.6652)
+visible = false
+use_collision = true
