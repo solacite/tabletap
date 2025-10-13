@@ -1447,6 +1447,9 @@ shape = SubResource("ConvexPolygonShape3D_yf2sm")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Dock Rail_015/StaticBody3D" index="0"]
 shape = SubResource("ConvexPolygonShape3D_ak7ul")
 
+[node name="Title_001" parent="." index="75"]
+transform = Transform3D(-59.0599, -54.1697, 2.09823e-13, 0, 0, -80.14, 54.1697, -59.0599, -1.92449e-13, -160.424, 168.663, 172.057)
+
 [node name="StaticBody3D" type="StaticBody3D" parent="Blueprint_001" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Blueprint_001/StaticBody3D" index="0"]
