@@ -1,4 +1,4 @@
-[gd_scene load_steps=337 format=3 uid="uid://dp3ivbla8rfeu"]
+[gd_scene load_steps=336 format=3 uid="uid://dp3ivbla8rfeu"]
 
 [ext_resource type="PackedScene" uid="uid://h203h4sm2nmv" path="res://models/lobby/lobbydraft3.glb" id="1_tdota"]
 
@@ -292,9 +292,6 @@ points = PackedVector3Array(-1.7423, -1.3778, -49.7628, 1.41729, 0.728596, 49.23
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ak7ul"]
 points = PackedVector3Array(0.606591, 4.48146, 0.606591, -0.993504, -0.909483, -0.993504, 0.985289, -0.795031, -0.950592, -1.04402, -0.778768, 1.07872, -0.617649, 4.32739, -0.617649, 1.07872, -0.778768, 1.07872, 0.572901, 4.32739, -0.617649, -0.617649, 4.32739, 0.572901, 1.07872, -0.778768, -1.04402, 0.651972, 3.84916, -0.617275, -0.617275, 3.84916, 0.651972, 0.985289, -0.795031, 0.985289, -0.950592, -0.795031, 0.985289)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5pd4h"]
-points = PackedVector3Array(1.01587, 0.015873, 1.01587, -1.01587, -0.015873, -1.01587, -1.01587, 0.015873, -1.01587, 1.01587, -0.015873, -1.01587, -1.01587, -0.015873, 1.01587, -1.01587, 0.015873, 1.01587, 1.01587, 0.015873, -1.01587, 1.01587, -0.015873, 1.01587)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hteex"]
 points = PackedVector3Array(1.01587, 0.015873, 1.01587, -1.01587, -0.015873, -1.01587, -1.01587, 0.015873, -1.01587, 1.01587, -0.015873, -1.01587, -1.01587, -0.015873, 1.01587, -1.01587, 0.015873, 1.01587, 1.01587, 0.015873, -1.01587, 1.01587, -0.015873, 1.01587)
@@ -1449,11 +1446,6 @@ shape = SubResource("ConvexPolygonShape3D_yf2sm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Dock Rail_015/StaticBody3D" index="0"]
 shape = SubResource("ConvexPolygonShape3D_ak7ul")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Title_001" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Title_001/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_5pd4h")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Blueprint_001" index="0"]
 
