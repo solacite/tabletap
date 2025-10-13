@@ -8,6 +8,7 @@ var tgt_pitch := 0.0
 const PITCH_UP := deg_to_rad(10)
 const PITCH_DN := deg_to_rad(-20)
 
+var last_safe_position: Vector3
 var pivot
 
 func _ready():
@@ -24,16 +25,18 @@ func _process(delta):
 	pivot.rotation.x = pitch
 
 func _physics_process(delta):
+	if is_on_floor():
+		last_safe_position = global_transform.origin
+
 	var inp_dir = Input.get_vector("move_left", "move_right", "move_fwd", "move_bkwd")
 	var direction = Vector3.ZERO
-	# In Godot, forward/backward is Z, left/right is X
 	direction.x = inp_dir.x
 	direction.z = inp_dir.y
 	direction = (transform.basis * direction).normalized()
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
 
-	# Gravity & Jump
+	# gravity + jump
 	if not is_on_floor():
 		velocity.y -= ProjectSettings.get_setting("physics/3d/default_gravity") * delta
 	else:
@@ -41,3 +44,8 @@ func _physics_process(delta):
 			velocity.y = jump_velocity
 
 	move_and_slide()
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if body == self:
+		global_position = last_safe_position
+		velocity = Vector3.ZERO

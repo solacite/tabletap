@@ -12,7 +12,8 @@ ambient_light_energy = 0.5
 tonemap_mode = 3
 tonemap_exposure = 0.83
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_0wfyh"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_sugp2"]
+size = Vector3(73.4463, 1, 72.3779)
 
 [node name="Main" type="Node3D"]
 
@@ -32,54 +33,11 @@ transform = Transform3D(0.100965, 0, 0, 0, 0.100965, 0, 0, 0, 0.100965, -71.95, 
 transform = Transform3D(0.129475, 0, 0, 0, 0.129475, 0, 0, 0, 0.129475, -89.1282, -31.5662, 61.953)
 safe_margin = 0.005
 
-[node name="Static Boxes" type="Node3D" parent="."]
-transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 0.101, -71.95, -38.99, 65.724)
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.355, -47.6595, 83.7388)
 
-[node name="First Room" type="Node3D" parent="Static Boxes"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.333, 0)
+shape = SubResource("BoxShape3D_sugp2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Static Boxes/First Room"]
-transform = Transform3D(316.438, 0, 0, 0, 94.9271, 0, 0, 0, -1.10776, -33.3691, 103.981, 24.2271)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D"]
-shape = SubResource("BoxShape3D_0wfyh")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="Static Boxes/First Room"]
-transform = Transform3D(-8.27692e-06, -3.62751e-13, -1.10776, -1.65538e-05, 94.927, 0, -189.354, -8.29878e-06, 4.84217e-08, 122.181, 104.268, -64.3776)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D2"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
-shape = SubResource("BoxShape3D_0wfyh")
-
-[node name="StaticBody3D3" type="StaticBody3D" parent="Static Boxes/First Room"]
-transform = Transform3D(283.822, 0, 0, 0, 94.9271, 0, 0, 0, -1.10776, -5.60266, 119.663, -155.043)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D3"]
-shape = SubResource("BoxShape3D_0wfyh")
-
-[node name="StaticBody3D4" type="StaticBody3D" parent="Static Boxes/First Room"]
-transform = Transform3D(-3.47064e-06, -3.62751e-13, -1.10776, -6.94128e-06, 94.927, 0, -79.399, -8.29878e-06, 4.84217e-08, -138.035, 104.268, -141.747)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D4"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
-shape = SubResource("BoxShape3D_0wfyh")
-
-[node name="StaticBody3D5" type="StaticBody3D" parent="Static Boxes/First Room"]
-transform = Transform3D(-133.515, -1.43336e-05, 9.68433e-08, -2.01603e-05, 94.927, -8.88178e-16, 1.16723e-05, 1.32919e-12, 1.10776, -204.173, 104.268, -102.177)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D5"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-shape = SubResource("BoxShape3D_0wfyh")
-
-[node name="StaticBody3D6" type="StaticBody3D" parent="Static Boxes/First Room"]
-transform = Transform3D(-64.1173, -1.43336e-05, 9.68433e-08, -9.68144e-06, 94.9269, -8.88178e-16, 5.60531e-06, 1.32919e-12, 1.10776, -251.236, 104.268, 21.8872)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D6"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-shape = SubResource("BoxShape3D_0wfyh")
-
-[node name="StaticBody3D7" type="StaticBody3D" parent="Static Boxes/First Room"]
-transform = Transform3D(-6.28596e-06, -3.62751e-13, -1.10776, -1.25719e-05, 94.927, 0, -143.806, -8.29878e-06, 4.84217e-08, -262.407, 104.268, -41.5111)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D7"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
-shape = SubResource("BoxShape3D_0wfyh")
+[connection signal="body_entered" from="Area3D" to="Player" method="_on_area_3d_body_entered"]
