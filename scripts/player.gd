@@ -5,6 +5,8 @@ extends CharacterBody3D
 @export var mouse_sens := 0.002
 var pitch := 0.0
 var tgt_pitch := 0.0
+var yaw := 0.0
+var tgt_yaw := 0.0
 const PITCH_UP := deg_to_rad(10)
 const PITCH_DN := deg_to_rad(-20)
 
@@ -19,10 +21,14 @@ func _ready():
 
 func _input(event):
 	if event is InputEventMouseMotion:
-		rotate_y(-event.relative.x * mouse_sens)
+		tgt_yaw -= event.relative.x * mouse_sens
+		tgt_pitch -= event.relative.y * mouse_sens
+		tgt_pitch = clamp(tgt_pitch, PITCH_DN, PITCH_UP)
 
 func _process(delta):
+	yaw = lerp_angle(yaw, tgt_yaw, 8.0 * delta)
 	pitch = lerp(pitch, tgt_pitch, 8.0 * delta)
+	rotation.y = yaw
 	pivot.rotation.x = pitch
 
 func _physics_process(delta):
