@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=15 format=3 uid="uid://dl8subouq8tno"]
 
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/lobbydraft.tscn" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://bk1hcmyue30iw" path="res://scripts/load_ui.gd" id="1_sugp2"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://b6foshjfi8fqo" path="res://assets/general/cloud3.png" id="4_tefeu"]
 [ext_resource type="Texture2D" uid="uid://yonh6lt1k4i3" path="res://assets/general/cloud2.png" id="6_o6xl0"]
 [ext_resource type="Texture2D" uid="uid://72m12r6hx148" path="res://assets/general/grass.png" id="7_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://dqvcg00ug2q2a" path="res://assets/general/mountain.png" id="8_85g3d"]
+[ext_resource type="Texture2D" uid="uid://ca3088q5jfilc" path="res://assets/general/mountain2.png" id="9_choun"]
 
 [sub_resource type="Environment" id="Environment_jyhfs"]
 background_mode = 1
@@ -116,7 +118,7 @@ texture = ExtResource("6_o6xl0")
 [node name="Grass" type="Node3D" parent="."]
 
 [node name="Grass" type="Sprite3D" parent="Grass"]
-transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, -91.5962, -40.1762, 63.6387)
+transform = Transform3D(13.0624, 0, 0, 0, -5.70976e-07, 13.0624, 0, -13.0624, -5.70976e-07, -91.5962, -40.1762, 63.6387)
 texture = ExtResource("7_o6xl0")
 
 [node name="Grass2" type="Sprite3D" parent="Grass"]
@@ -150,5 +152,145 @@ texture = ExtResource("7_o6xl0")
 [node name="Grass9" type="Sprite3D" parent="Grass"]
 transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, -207.974, -40.1762, -29.2908)
 texture = ExtResource("7_o6xl0")
+
+[node name="Mountain" type="Node3D" parent="."]
+
+[node name="Mountain" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(23.5469, 0, 0, 0, 23.5469, 0, 0, 0, 23.5469, -38.6226, -11.8397, -395.006)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain2" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(6.66173, 0, 14.324, 0, 15.7973, 0, -14.324, 0, 6.66173, -347.759, -37.7307, -78.7031)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain3" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(27.3474, 0, 17.4941, 0, 32.4642, 0, -17.4941, 0, 27.3474, -275.906, 116.435, -259.749)
+texture = ExtResource("9_choun")
+
+[node name="Mountain4" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(17.4559, 0, 4.79669, 0, 18.103, 0, -4.79669, 0, 17.4559, -68.8284, 32.0112, -215.134)
+texture = ExtResource("9_choun")
+
+[node name="Mountain5" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-20.8226, 0, 10.9943, 0, 23.5469, 0, -10.9943, 0, -20.8226, -225.313, 21.3914, 468.915)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain6" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-12.579, 0, -9.5563, 0, 15.7973, 0, 9.5563, 0, -12.579, 169.413, -4.49957, 319.644)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain7" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-32.3516, 0, -2.70129, 0, 32.4642, 0, 2.70129, 0, -32.3516, 47.6709, 149.666, 460.097)
+texture = ExtResource("9_choun")
+
+[node name="Mountain8" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-17.676, 0, 3.90864, 0, 18.103, 0, -3.90863, 0, -17.676, -114.617, 65.2423, 323.957)
+texture = ExtResource("9_choun")
+
+[node name="Mountain9" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-12.4186, 0, -20.0058, 0, 23.5469, 0, 20.0058, 0, -12.4186, 338.704, 21.3914, 253.303)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain10" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(8.65648, 0, -13.2144, 0, 15.7973, 0, 13.2144, 0, 8.65648, 217.303, -4.49957, -150.866)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain11" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(0.440242, 0, -32.4612, 0, 32.4642, 0, 32.4612, 0, 0.440237, 348.931, 149.666, -19.6317)
+texture = ExtResource("9_choun")
+
+[node name="Mountain12" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-5.13091, 0, -17.3606, 0, 18.103, 0, 17.3606, 0, -5.13092, 201.812, 65.2423, 132.775)
+texture = ExtResource("9_choun")
+
+[node name="Mountain13" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(2.42698, 0, 23.4215, 0, 23.5469, 0, -23.4215, 0, 2.42698, -593.965, 21.3658, -16.8619)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain14" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-13.5611, 0, 8.10263, 0, 15.7973, 0, -8.10263, 0, -13.5611, -308.14, -4.52512, 293.613)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain15" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-14.5822, 0, 29.0049, 0, 32.4642, 0, -29.0049, 0, -14.5822, -483.885, 149.641, 233.099)
+texture = ExtResource("9_choun")
+
+[node name="Mountain16" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-2.97196, 0, 17.8573, 0, 18.103, 0, -17.8573, 0, -2.97195, -418.164, 65.2167, 31.7224)
+texture = ExtResource("9_choun")
+
+[node name="Mountain17" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(30.577, 0, -10.9073, 0, 32.4642, 0, 10.9072, 0, 30.5771, 78.7348, 116.435, -314.33)
+texture = ExtResource("9_choun")
+
+[node name="Mountain18" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(76.4367, 0, -21.159, 0, 79.3112, 0, 21.159, 0, 76.4367, 480.539, 120.464, -1380.07)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain19" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(34.4964, 0, 40.5116, 0, 53.2089, 0, -40.5116, 0, 34.4964, -807.191, 33.2574, -631.092)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain20" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(104.494, 0, 32.2144, 0, 109.347, 0, -32.2144, 0, 104.494, -411.259, 552.523, -1154.23)
+texture = ExtResource("9_choun")
+
+[node name="Mountain21" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(60.9748, 0, -0.114944, 0, 60.9749, 0, 0.114937, 0, 60.9748, 220.855, 268.164, -823.325)
+texture = ExtResource("9_choun")
+
+[node name="Mountain22" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-57.7139, 0, 54.4002, 0, 79.3112, 0, -54.4001, 0, -57.7139, -901.797, 232.394, 1256.59)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain23" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-49.4206, 0, -19.7178, 0, 53.2089, 0, 19.7178, 0, -49.4206, 513.678, 145.187, 1126.73)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain24" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-107.446, 0, 20.3021, 0, 109.347, 0, -20.3021, 0, -107.446, -7.72651, 664.453, 1473.26)
+texture = ExtResource("9_choun")
+
+[node name="Mountain25" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-53.8666, 0, 28.5715, 0, 60.9749, 0, -28.5715, 0, -53.8666, -412.205, 380.094, 885.502)
+texture = ExtResource("9_choun")
+
+[node name="Mountain26" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-58.2898, 0, -53.7826, 0, 79.3112, 0, 53.7826, 0, -58.2898, 1122.83, 232.394, 1063.5)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain27" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(16.2259, 0, -50.6746, 0, 53.2089, 0, 50.6745, 0, 16.2259, 1091.93, 145.187, -357.585)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain28" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-27.7402, 0, -105.77, 0, 109.347, 0, 105.77, 0, -27.7403, 1401.29, 664.453, 186.701)
+texture = ExtResource("9_choun")
+
+[node name="Mountain29" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-32.2558, 0, -51.7446, 0, 60.9749, 0, 51.7446, 0, -32.2558, 786.768, 380.094, 549.237)
+texture = ExtResource("9_choun")
+
+[node name="Mountain30" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(28.9246, 0, 73.8488, 0, 79.3112, 0, -73.8487, 0, 28.9246, -1661.98, 232.308, -651.585)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain31" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-36.7403, 0, 38.4882, 0, 53.2089, 0, -38.4882, 0, -36.7403, -1013.14, 145.101, 613.104)
+texture = ExtResource("8_85g3d")
+
+[node name="Mountain32" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(-21.2726, 0, 107.258, 0, 109.347, 0, -107.258, 0, -21.2726, -1529.26, 664.367, 258.741)
+texture = ExtResource("9_choun")
+
+[node name="Mountain33" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(6.39901, 0, 60.6382, 0, 60.9749, 0, -60.6382, 0, 6.39902, -1134.97, 380.008, -335.9)
+texture = ExtResource("9_choun")
+
+[node name="Mountain34" type="Sprite3D" parent="Mountain"]
+transform = Transform3D(89.4566, 0, -62.8829, 0, 109.347, 0, 62.8828, 0, 89.4566, 789.005, 552.523, -1012.73)
+texture = ExtResource("9_choun")
+
+[node name="Back Clouds" type="Node3D" parent="."]
 
 [connection signal="body_entered" from="Respawn" to="Player" method="_on_area_3d_body_entered"]
