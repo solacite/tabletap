@@ -1,4 +1,4 @@
-[gd_scene load_steps=336 format=3 uid="uid://dp3ivbla8rfeu"]
+[gd_scene load_steps=340 format=4 uid="uid://dp3ivbla8rfeu"]
 
 [ext_resource type="PackedScene" uid="uid://h203h4sm2nmv" path="res://models/lobby/lobbydraft3.glb" id="1_tdota"]
 
@@ -469,6 +469,48 @@ points = PackedVector3Array(0.606591, 4.48146, 0.606591, -0.993504, -0.909483, -
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2iwah"]
 points = PackedVector3Array(2.04555, -51.5695, 0.0192766, -2.19945, -97.4851, -1.90974, -2.19945, -97.4851, -0.366595, -1.81343, -53.496, -1.90974, -0.655778, -50.0207, 0.79102, 1.27309, -95.5538, 1.17723, 0.50146, -88.9951, -1.90974, 0.115437, -50.0207, -2.29595, -0.655778, -97.4851, 1.17723, 1.65911, -50.0207, 1.17723, 1.27309, -97.4851, -0.366595, -1.81343, -97.4851, -2.29595, 1.65911, -50.0207, -1.138, -1.42741, -50.0207, 0.0192766, -1.81343, -92.8529, 0.405149, -1.42741, -50.0207, -2.29595, -0.655778, -95.5538, -2.29595, 0.115437, -53.1088, 1.17723, 2.04555, -53.496, 0.79102, 1.27309, -83.2061, -1.138, 0.887067, -63.9172, -1.90974, 1.65911, -82.427, 0.405149, 0.115437, -97.4851, -1.90974, -2.19945, -88.9951, -0.752127, -1.42741, -97.4851, 0.79102, -1.81343, -55.0401, -1.138, -0.655778, -49.6335, 0.405149, -1.42741, -97.8723, 0.405149, 1.27309, -97.4851, 0.79102, 0.115437, -61.6035, -2.29595, 0.887067, -97.4851, -1.138, 1.27309, -49.6335, -1.138)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tdota"]
+load_path = "res://.godot/imported/lobbydraft3_wall.png-3206e98f93dfd9aa1654594da874ed08.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n3vhk"]
+resource_name = "Wall"
+cull_mode = 2
+albedo_texture = SubResource("CompressedTexture2D_tdota")
+metallic = 0.2
+roughness = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_be0ya"]
+_surfaces = [{
+"aabb": AABB(-171.664, -1.05695, -2.53401, 201.719, 99.5638, 3.53401),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "Wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAlAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD/////AAAAAP//JQD//wAA////////AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cw5jr"]
+resource_name = "lobbydraft3_Cube_124"
+_surfaces = [{
+"aabb": AABB(-171.664, -1.05695, -2.53401, 201.719, 99.5638, 3.53401),
+"attribute_data": PackedByteArray("rvt4hv////+u+/////94hoZ5pQkAAP//AAClCYZ5/v+u+/IM/v94hq77eIb+//IMDPOlCYZ5//+GeaUJDPP//133//8M86UJXfelCQzz//+u+///XfelCa77pQld9///"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_n3vhk"),
+"name": "Wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAlAP//iv8AAP//AAD//wAA////////AAAAAAAAiP8AAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAIr/////////////////AAD/////JQD//4j///8lAP///78AAP//////v/////////+/AAAlAP///78AAAAAAADz1P//JQD///PU//8AAAAA89QAACUA///z1P////8AAFTVAAD/////VNUAAP//AABU1f///////1TVQECAgAFAAoD/P/9/QUCCgP+//z//v/8//7//P/+//z+AAL8/AgD+P/+//3+DAL4//3//f/9//3//f/9//3//f49Vj1WPVY9Vj1WPVY9Vj1VU1aoqVNWqKlTVqipU1aoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_be0ya")
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tphcd"]
 points = PackedVector3Array(-173.265, -2.65784, -4.13494, 31.6552, 99.8024, 2.26882, 31.6552, 99.8024, -4.13494, -173.265, 99.8024, 2.26882, 31.6552, -2.65784, 2.26882, 31.6552, -2.65784, -4.13494, -173.265, 99.8024, -4.13494, -173.265, -2.65784, 2.26882)
@@ -1448,7 +1490,7 @@ shape = SubResource("ConvexPolygonShape3D_yf2sm")
 shape = SubResource("ConvexPolygonShape3D_ak7ul")
 
 [node name="Title_001" parent="." index="75"]
-transform = Transform3D(-59.0599, -54.1697, 2.09823e-13, 0, 0, -80.14, 54.1697, -59.0599, -1.92449e-13, -160.424, 168.663, 172.057)
+transform = Transform3D(-57.4805, -52.721, 2.04212e-13, 0, 0, -77.9969, 52.721, -57.4805, -1.87303e-13, -157.953, 168.663, 170.066)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Blueprint_001" index="0"]
 
@@ -1736,6 +1778,9 @@ shape = SubResource("ConvexPolygonShape3D_bwcar")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Dock Rail_035/StaticBody3D" index="0"]
 shape = SubResource("ConvexPolygonShape3D_2iwah")
+
+[node name="Sign" parent="." index="131"]
+mesh = SubResource("ArrayMesh_cw5jr")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Sign" index="0"]
 
