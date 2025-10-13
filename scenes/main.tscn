@@ -42,23 +42,23 @@ transform = Transform3D(0.100965, 0, 0, 0, 0.100965, 0, 0, 0, 0.100965, -71.95, 
 transform = Transform3D(0.129475, 0, 0, 0, 0.129475, 0, 0, 0, 0.129475, -89.1282, -31.5662, 61.953)
 safe_margin = 0.005
 
-[node name="Area3D" type="Area3D" parent="."]
+[node name="Respawn" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.355, -47.6595, 83.7388)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Respawn"]
 transform = Transform3D(196.128, 0, 0, 0, 1, 0, 0, 0, 1, -24.0066, 7.25735, -7.67292)
 shape = SubResource("BoxShape3D_0wfyh")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Respawn"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4352, 5.93224, -45.1015)
 shape = SubResource("BoxShape3D_sugp2")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Area3D"]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Respawn"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.7195, 3.03388, -19.2918)
 shape = SubResource("BoxShape3D_jyhfs")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Area3D"]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Respawn"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3184, 6.05527, 0.321785)
 shape = SubResource("BoxShape3D_tbgi4")
 
-[connection signal="body_entered" from="Area3D" to="Player" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Respawn" to="Player" method="_on_area_3d_body_entered"]
