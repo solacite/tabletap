@@ -8,7 +8,7 @@ var tgt_pitch := 0.0
 const PITCH_UP := deg_to_rad(10)
 const PITCH_DN := deg_to_rad(-20)
 
-const RESPAWN_SCREEN = preload("res://scenes/respawn_screen.tscn")
+const LOADING_SCREEN = preload("res://scenes/loading_screen.tscn")
 
 var respawn_point: Vector3 = Vector3(-91.69894, -31.41502, 60.24416)
 var pivot
@@ -45,12 +45,12 @@ func _physics_process(delta):
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body == self:
-		show_respawn_screen()
+		show_loading_screen()
 		global_position = respawn_point
 		velocity = Vector3.ZERO
 
-func show_respawn_screen():
-	var screen = RESPAWN_SCREEN.instantiate()
+func show_loading_screen():
+	var screen = LOADING_SCREEN.instantiate()
 	get_tree().current_scene.add_child(screen)
 	await get_tree().create_timer(1.0).timeout
 	screen.queue_free()
