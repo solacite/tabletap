@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca77l2d0t5vyl"
-path="res://.godot/imported/pond.png-524b441203b90836f7fca7072b35d79c.ctex"
+uid="uid://dwmyjm7g7bc7l"
+path="res://.godot/imported/plank.png-82090967d4b653b2025482453938339d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/general/pond.png"
-dest_files=["res://.godot/imported/pond.png-524b441203b90836f7fca7072b35d79c.ctex"]
+source_file="res://assets/map/plank.png"
+dest_files=["res://.godot/imported/plank.png-82090967d4b653b2025482453938339d.ctex"]
 
 [params]
 

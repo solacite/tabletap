@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6foshjfi8fqo"
-path.s3tc="res://.godot/imported/cloud3.png-fa924f45c063759e55fef91eb6647e19.s3tc.ctex"
+uid="uid://bf446kg3y687b"
+path.s3tc="res://.godot/imported/mountainlight.png-e9de751a0c73ff99ddbcd2e3457f09ed.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/general/cloud3.png"
-dest_files=["res://.godot/imported/cloud3.png-fa924f45c063759e55fef91eb6647e19.s3tc.ctex"]
+source_file="res://assets/map/mountainlight.png"
+dest_files=["res://.godot/imported/mountainlight.png-e9de751a0c73ff99ddbcd2e3457f09ed.s3tc.ctex"]
 
 [params]
 

@@ -1,14 +1,16 @@
-[gd_scene load_steps=15 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=17 format=3 uid="uid://dl8subouq8tno"]
 
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/lobbydraft.tscn" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://bk1hcmyue30iw" path="res://scripts/load_ui.gd" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://8s556elrrtdg" path="res://scenes/player.tscn" id="2_0wfyh"]
-[ext_resource type="Texture2D" uid="uid://bc4rr0ao781yu" path="res://assets/general/cloud.png" id="4_jyhfs"]
-[ext_resource type="Texture2D" uid="uid://b6foshjfi8fqo" path="res://assets/general/cloud3.png" id="4_tefeu"]
-[ext_resource type="Texture2D" uid="uid://yonh6lt1k4i3" path="res://assets/general/cloud2.png" id="6_o6xl0"]
-[ext_resource type="Texture2D" uid="uid://72m12r6hx148" path="res://assets/general/grass.png" id="7_o6xl0"]
-[ext_resource type="Texture2D" uid="uid://dqvcg00ug2q2a" path="res://assets/general/mountain.png" id="8_85g3d"]
-[ext_resource type="Texture2D" uid="uid://ca3088q5jfilc" path="res://assets/general/mountain2.png" id="9_choun"]
+[ext_resource type="Texture2D" uid="uid://bc4rr0ao781yu" path="res://assets/map/cloud.png" id="4_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://b6foshjfi8fqo" path="res://assets/map/cloud3.png" id="4_tefeu"]
+[ext_resource type="Texture2D" uid="uid://yonh6lt1k4i3" path="res://assets/map/cloud2.png" id="6_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://72m12r6hx148" path="res://assets/map/grass.png" id="7_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://dqvcg00ug2q2a" path="res://assets/map/mountain.png" id="8_85g3d"]
+[ext_resource type="Texture2D" uid="uid://ca3088q5jfilc" path="res://assets/map/mountain2.png" id="9_choun"]
+[ext_resource type="Texture2D" uid="uid://b3p5grxw5qwkl" path="res://assets/map/mountainlight2.png" id="10_ya4ey"]
+[ext_resource type="Texture2D" uid="uid://bf446kg3y687b" path="res://assets/map/mountainlight.png" id="11_eb6dy"]
 
 [sub_resource type="Environment" id="Environment_jyhfs"]
 background_mode = 1
@@ -230,23 +232,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 160.437, 0)
 
 [node name="Mountain18" type="Sprite3D" parent="Back Mountain"]
 transform = Transform3D(76.4367, 0, -21.159, 0, 79.3112, 0, 21.159, 0, 76.4367, 480.539, -173.23, -1380.07)
-texture = ExtResource("8_85g3d")
+texture = ExtResource("10_ya4ey")
 
 [node name="Mountain19" type="Sprite3D" parent="Back Mountain"]
 transform = Transform3D(34.4964, 0, 40.5116, 0, 53.2089, 0, -40.5116, 0, 34.4964, -807.191, -260.437, -631.092)
-texture = ExtResource("8_85g3d")
+texture = ExtResource("11_eb6dy")
 
 [node name="Mountain20" type="Sprite3D" parent="Back Mountain"]
 transform = Transform3D(104.494, 0, 32.2144, 0, 109.347, 0, -32.2144, 0, 104.494, -411.259, 258.83, -1154.23)
-texture = ExtResource("9_choun")
+texture = ExtResource("10_ya4ey")
 
 [node name="Mountain21" type="Sprite3D" parent="Back Mountain"]
 transform = Transform3D(60.9748, 0, -0.114944, 0, 60.9749, 0, 0.114937, 0, 60.9748, 220.855, -25.5301, -823.325)
-texture = ExtResource("9_choun")
+texture = ExtResource("10_ya4ey")
 
 [node name="Mountain22" type="Sprite3D" parent="Back Mountain"]
 transform = Transform3D(-57.7139, 0, 54.4002, 0, 79.3112, 0, -54.4001, 0, -57.7139, -901.797, -61.3001, 1256.59)
-texture = ExtResource("8_85g3d")
+texture = ExtResource("11_eb6dy")
 
 [node name="Mountain23" type="Sprite3D" parent="Back Mountain"]
 transform = Transform3D(-49.4206, 0, -19.7178, 0, 53.2089, 0, 19.7178, 0, -49.4206, 513.678, -148.507, 1126.73)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwmyjm7g7bc7l"
-path="res://.godot/imported/plank.png-7dba140482fdb195fa6a50e9fdf0ad57.ctex"
+uid="uid://de2i0fawv86nr"
+path="res://.godot/imported/mountainmid.png-32a80444a297ab1a488b205325893ee1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/general/plank.png"
-dest_files=["res://.godot/imported/plank.png-7dba140482fdb195fa6a50e9fdf0ad57.ctex"]
+source_file="res://assets/map/mountainmid.png"
+dest_files=["res://.godot/imported/mountainmid.png-32a80444a297ab1a488b205325893ee1.ctex"]
 
 [params]
 
