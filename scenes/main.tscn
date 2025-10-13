@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=9 format=3 uid="uid://dl8subouq8tno"]
 
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/lobbydraft.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://bk1hcmyue30iw" path="res://scripts/load_ui.gd" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://8s556elrrtdg" path="res://scenes/player.tscn" id="2_0wfyh"]
 
 [sub_resource type="Environment" id="Environment_jyhfs"]
@@ -25,6 +26,7 @@ size = Vector3(20.8105, 20.3096, 55.1296)
 size = Vector3(30.4181, 15.2901, 31.266)
 
 [node name="Main" type="Node3D"]
+script = ExtResource("1_sugp2")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jyhfs")
