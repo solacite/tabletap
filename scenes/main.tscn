@@ -32,104 +32,54 @@ transform = Transform3D(0.100965, 0, 0, 0, 0.100965, 0, 0, 0, 0.100965, -71.95, 
 transform = Transform3D(0.129475, 0, 0, 0, 0.129475, 0, 0, 0, 0.129475, -89.1282, -31.5662, 61.953)
 safe_margin = 0.005
 
-[node name="CSG Boxes" type="Node3D" parent="."]
-visible = false
-
-[node name="Main Room" type="Node3D" parent="CSG Boxes"]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSG Boxes/Main Room"]
-transform = Transform3D(32.4265, 0, 0, 0, 11.45, 0, 0, 0, 0.579723, -74.8373, -27.1521, 68.279)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="CSG Boxes/Main Room"]
-transform = Transform3D(-1.18966e-06, 0, 0.579723, 0, 11.45, 0, -27.2162, 0, -2.53405e-08, -59.4283, -27.1521, 59.4754)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="CSG Boxes/Main Room"]
-transform = Transform3D(25.4496, 0, 0, 0, 11.45, 0, 0, 0, 0.579723, -73.9513, -26.6968, 50.0624)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="CSG Boxes/Main Room"]
-transform = Transform3D(-3.85365e-07, 0, 0.579723, 0, 11.45, 0, -8.81613, 0, -2.53405e-08, -86.0578, -27.1521, 50.8698)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D5" type="CSGBox3D" parent="CSG Boxes/Main Room"]
-transform = Transform3D(14.3098, 0, 0, 0, 11.45, 0, 0, 0, 0.579723, -93.1126, -27.1521, 55.0503)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D6" type="CSGBox3D" parent="CSG Boxes/Main Room"]
-transform = Transform3D(5.33145, 0, 0, 0, 11.45, 0, 0, 0, 0.579723, -96.8452, -27.1521, 68.2148)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D7" type="CSGBox3D" parent="CSG Boxes/Main Room"]
-transform = Transform3D(-6.28568e-07, 0, 0.579723, 0, 11.45, 0, -14.38, 0, -2.53405e-08, -98.6222, -27.1521, 61.6652)
-visible = false
-use_collision = true
-
-[node name="Second Room" type="Node3D" parent="CSG Boxes"]
-
-[node name="CSGBox3D7" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-transform = Transform3D(-3.00957, 0, 0.256143, 0, 11.45, 0, -6.09716, 0, -0.126433, -93.4397, -27.2777, 71.4281)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D8" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-transform = Transform3D(-2.31098, 0, 0.156119, 0, 11.45, 0, -2.45218, 0, -0.147129, -90.0933, -27.152, 69.5193)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D9" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-transform = Transform3D(-5.27036, -0.573196, 0.179911, 0.105398, 11.3933, 0.0280405, -4.29478, 0.983005, -0.220091, -92.3125, -27.3619, 72.5458)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D10" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-transform = Transform3D(-2.31098, 0, 0.156119, 0, 11.45, 0, -2.45218, 0, -0.147129, -88.7117, -27.1558, 71.0712)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D12" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-transform = Transform3D(-3.04624, 0, -0.0407942, 0, 11.45, 0, -3.23236, 0, 0.0384452, -95.2283, -22.5892, 91.5671)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D13" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-process_physics_priority = 10
-transform = Transform3D(-3.04624, 0, -0.0407942, 0, 11.45, 0, -3.23236, 0, 0.0384452, -101.963, -22.5892, 84.5078)
-visible = false
-use_collision = true
-collision_priority = 9.95
-
-[node name="CSGBox3D14" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-transform = Transform3D(3.5228, 0, 0.299138, 0, 11.45, 0, -3.23054, 0, 0.3262, -85.7225, -22.5892, 70.9233)
-visible = false
-use_collision = true
-
-[node name="CSGBox3D15" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-transform = Transform3D(11.5257, 0, -1.97842, 0, 11.45, 0, -10.5695, 0, -2.1574, -95.9482, -22.9423, 79.3269)
-visible = false
-calculate_tangents = false
-use_collision = true
-
-[node name="CSGBox3D16" type="CSGBox3D" parent="CSG Boxes/Second Room"]
-transform = Transform3D(7.9734, 0, -1.94388, 0, 11.45, 0, 8.11407, 0, 1.91018, -82.5209, -23.3326, 73.1834)
-visible = false
-use_collision = true
-
 [node name="Static Boxes" type="Node3D" parent="."]
 transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 0.101, -71.95, -38.99, 65.724)
 
 [node name="First Room" type="Node3D" parent="Static Boxes"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Static Boxes/First Room"]
 transform = Transform3D(316.438, 0, 0, 0, 94.9271, 0, 0, 0, -1.10776, -33.3691, 103.981, 24.2271)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D"]
+shape = SubResource("BoxShape3D_0wfyh")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Static Boxes/First Room"]
+transform = Transform3D(-8.27692e-06, -3.62751e-13, -1.10776, -1.65538e-05, 94.927, 0, -189.354, -8.29878e-06, 4.84217e-08, 122.181, 104.268, -64.3776)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+shape = SubResource("BoxShape3D_0wfyh")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="Static Boxes/First Room"]
+transform = Transform3D(283.822, 0, 0, 0, 94.9271, 0, 0, 0, -1.10776, -5.60266, 119.663, -155.043)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D3"]
+shape = SubResource("BoxShape3D_0wfyh")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="Static Boxes/First Room"]
+transform = Transform3D(-3.47064e-06, -3.62751e-13, -1.10776, -6.94128e-06, 94.927, 0, -79.399, -8.29878e-06, 4.84217e-08, -138.035, 104.268, -141.747)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+shape = SubResource("BoxShape3D_0wfyh")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="Static Boxes/First Room"]
+transform = Transform3D(-133.515, -1.43336e-05, 9.68433e-08, -2.01603e-05, 94.927, -8.88178e-16, 1.16723e-05, 1.32919e-12, 1.10776, -204.173, 104.268, -102.177)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+shape = SubResource("BoxShape3D_0wfyh")
+
+[node name="StaticBody3D6" type="StaticBody3D" parent="Static Boxes/First Room"]
+transform = Transform3D(-64.1173, -1.43336e-05, 9.68433e-08, -9.68144e-06, 94.9269, -8.88178e-16, 5.60531e-06, 1.32919e-12, 1.10776, -251.236, 104.268, 21.8872)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D6"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+shape = SubResource("BoxShape3D_0wfyh")
+
+[node name="StaticBody3D7" type="StaticBody3D" parent="Static Boxes/First Room"]
+transform = Transform3D(-6.28596e-06, -3.62751e-13, -1.10776, -1.25719e-05, 94.927, 0, -143.806, -8.29878e-06, 4.84217e-08, -262.407, 104.268, -41.5111)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D7"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 shape = SubResource("BoxShape3D_0wfyh")
