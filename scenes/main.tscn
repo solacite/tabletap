@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=5 format=3 uid="uid://dl8subouq8tno"]
 
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/lobbydraft.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://8s556elrrtdg" path="res://scenes/player.tscn" id="2_0wfyh"]
@@ -12,6 +12,8 @@ ambient_light_energy = 0.5
 tonemap_mode = 3
 tonemap_exposure = 0.83
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_0wfyh"]
+
 [node name="Main" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -24,7 +26,7 @@ light_indirect_energy = 16.0
 light_specular = 0.0
 
 [node name="Lobby" parent="." instance=ExtResource("1_o5qli")]
-transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 0.101, -71.95, -38.99, 65.724)
+transform = Transform3D(0.100965, 0, 0, 0, 0.100965, 0, 0, 0, 0.100965, -71.95, -38.99, 65.724)
 
 [node name="Player" parent="." instance=ExtResource("2_0wfyh")]
 transform = Transform3D(0.129475, 0, 0, 0, 0.129475, 0, 0, 0, 0.129475, -89.1282, -31.5662, 61.953)
@@ -119,3 +121,15 @@ use_collision = true
 transform = Transform3D(7.9734, 0, -1.94388, 0, 11.45, 0, 8.11407, 0, 1.91018, -82.5209, -23.3326, 73.1834)
 visible = false
 use_collision = true
+
+[node name="Static Boxes" type="Node3D" parent="."]
+transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 0.101, -71.95, -38.99, 65.724)
+
+[node name="First Room" type="Node3D" parent="Static Boxes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Static Boxes/First Room"]
+transform = Transform3D(316.438, 0, 0, 0, 94.9271, 0, 0, 0, -1.10776, -33.3691, 103.981, 24.2271)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Static Boxes/First Room/StaticBody3D"]
+shape = SubResource("BoxShape3D_0wfyh")
