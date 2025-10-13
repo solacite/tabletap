@@ -1,9 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=13 format=3 uid="uid://dl8subouq8tno"]
 
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/lobbydraft.tscn" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://bk1hcmyue30iw" path="res://scripts/load_ui.gd" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://8s556elrrtdg" path="res://scenes/player.tscn" id="2_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://bc4rr0ao781yu" path="res://assets/general/cloud.png" id="4_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://b6foshjfi8fqo" path="res://assets/general/cloud3.png" id="4_tefeu"]
+[ext_resource type="Texture2D" uid="uid://yonh6lt1k4i3" path="res://assets/general/cloud2.png" id="6_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://72m12r6hx148" path="res://assets/general/grass.png" id="7_o6xl0"]
 
 [sub_resource type="Environment" id="Environment_jyhfs"]
 background_mode = 1
@@ -38,6 +41,10 @@ light_energy = 1.192
 light_indirect_energy = 16.0
 light_specular = 0.0
 
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.707107, -7.462e-08, -0.707107, -0.707107, -3.09086e-08, 0.707107, -7.462e-08, 1, -3.09086e-08, -70.4353, -23.3125, 59.865)
+light_energy = 6.045
+
 [node name="Lobby" parent="." instance=ExtResource("1_o5qli")]
 transform = Transform3D(0.100965, 0, 0, 0, 0.100965, 0, 0, 0, 0.100965, -71.95, -38.99, 65.724)
 
@@ -68,7 +75,7 @@ shape = SubResource("BoxShape3D_tbgi4")
 
 [node name="Cloud" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(0.2426, 0, 0.203732, 0, 0.316799, 0, -0.203732, 0, 0.2426, -91.5962, -27.4361, 38.4145)
-texture = ExtResource("4_jyhfs")
+texture = ExtResource("4_tefeu")
 
 [node name="Cloud2" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(0.506195, 0, 0.108066, 0, 0.517602, 0, -0.108066, 0, 0.506195, -83.1725, -27.4361, 35.9494)
@@ -76,11 +83,11 @@ texture = ExtResource("4_jyhfs")
 
 [node name="Cloud3" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(0.248699, 0, 0.196241, 0, 0.316799, 0, -0.196241, 0, 0.248699, -71.2671, -22.346, 74.9578)
-texture = ExtResource("4_jyhfs")
+texture = ExtResource("4_tefeu")
 
 [node name="Cloud4" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(0.209187, 0, 0.68529, 0, 0.716507, 0, -0.68529, 0, 0.209187, -137.14, -27.4361, 54.4595)
-texture = ExtResource("4_jyhfs")
+texture = ExtResource("4_tefeu")
 
 [node name="Cloud5" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(0.485587, 0, 1.59076, 0, 1.66323, 0, -1.59076, 0, 0.485587, -152.096, -26.3864, 35.3948)
@@ -88,7 +95,7 @@ texture = ExtResource("4_jyhfs")
 
 [node name="Cloud6" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(0.209187, 0, 0.68529, 0, 0.716507, 0, -0.68529, 0, 0.209187, -137.14, -18.7224, 27.0104)
-texture = ExtResource("4_jyhfs")
+texture = ExtResource("6_o6xl0")
 
 [node name="Cloud7" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(-0.212972, 0, 0.23453, 0, 0.316799, 0, -0.23453, 0, -0.212972, -153.295, -15.798, 117.627)
@@ -100,14 +107,48 @@ texture = ExtResource("4_jyhfs")
 
 [node name="Cloud9" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(-0.444578, 0, 0.161093, 0, 0.472864, 0, -0.161093, 0, -0.444578, -70.3907, -22.4882, 46.4084)
-texture = ExtResource("4_jyhfs")
+texture = ExtResource("6_o6xl0")
 
 [node name="Cloud10" type="Sprite3D" parent="Clouds"]
 transform = Transform3D(-0.782047, 0, 0.861208, 0, 1.1633, 0, -0.861208, 0, -0.782047, -163.842, -15.798, 117.627)
-texture = ExtResource("4_jyhfs")
+texture = ExtResource("6_o6xl0")
 
-[node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(-0.707107, -7.462e-08, -0.707107, -0.707107, -3.09086e-08, 0.707107, -7.462e-08, 1, -3.09086e-08, -70.4353, -23.3125, 59.865)
-light_energy = 6.045
+[node name="Grass" type="Node3D" parent="."]
+
+[node name="Grass" type="Sprite3D" parent="Grass"]
+transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, -91.5962, -40.1762, 63.6387)
+texture = ExtResource("7_o6xl0")
+
+[node name="Grass2" type="Sprite3D" parent="Grass"]
+transform = Transform3D(-3.14264e-07, -7.18953, 0, -3.14264e-07, 1.37369e-14, 7.18953, -7.18953, 3.14264e-07, -3.14264e-07, 28.0058, -40.1762, 63.6387)
+texture = ExtResource("7_o6xl0")
+
+[node name="Grass3" type="Sprite3D" parent="Grass"]
+transform = Transform3D(-3.14264e-07, -7.18953, 0, -3.14264e-07, 1.37369e-14, 7.18953, -7.18953, 3.14264e-07, -3.14264e-07, -207.264, -40.1762, 63.6387)
+texture = ExtResource("7_o6xl0")
+
+[node name="Grass4" type="Sprite3D" parent="Grass"]
+transform = Transform3D(-3.14264e-07, -7.18953, 0, -3.14264e-07, 1.37369e-14, 7.18953, -7.18953, 3.14264e-07, -3.14264e-07, -85.921, -40.1762, -29.0854)
+texture = ExtResource("7_o6xl0")
+
+[node name="Grass5" type="Sprite3D" parent="Grass"]
+transform = Transform3D(-3.14264e-07, -7.18953, 0, -3.14264e-07, 1.37369e-14, 7.18953, -7.18953, 3.14264e-07, -3.14264e-07, -85.921, -40.1762, 171.875)
+texture = ExtResource("7_o6xl0")
+
+[node name="Grass6" type="Sprite3D" parent="Grass"]
+transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, 24.3257, -40.1762, 167.805)
+texture = ExtResource("7_o6xl0")
+
+[node name="Grass7" type="Sprite3D" parent="Grass"]
+transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, 26.542, -40.1762, -23.6814)
+texture = ExtResource("7_o6xl0")
+
+[node name="Grass8" type="Sprite3D" parent="Grass"]
+transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, -208.048, -40.1762, 162.068)
+texture = ExtResource("7_o6xl0")
+
+[node name="Grass9" type="Sprite3D" parent="Grass"]
+transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, -207.974, -40.1762, -29.2908)
+texture = ExtResource("7_o6xl0")
 
 [connection signal="body_entered" from="Respawn" to="Player" method="_on_area_3d_body_entered"]
