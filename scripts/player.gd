@@ -8,7 +8,9 @@ var tgt_pitch := 0.0
 const PITCH_UP := deg_to_rad(10)
 const PITCH_DN := deg_to_rad(-20)
 
-var last_safe_position: Vector3
+const RESPAWN_SCREEN = preload("res://scenes/respawn_screen.tscn")
+
+var respawn_point: Vector3 = Vector3(-91.69894, -31.41502, 60.24416)
 var pivot
 
 func _ready():
@@ -18,16 +20,12 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * mouse_sens)
-		tgt_pitch = clamp(tgt_pitch - event.relative.y * mouse_sens, PITCH_DN, PITCH_UP)
 
 func _process(delta):
 	pitch = lerp(pitch, tgt_pitch, 8.0 * delta)
 	pivot.rotation.x = pitch
 
 func _physics_process(delta):
-	if is_on_floor():
-		last_safe_position = global_transform.origin
-
 	var inp_dir = Input.get_vector("move_left", "move_right", "move_fwd", "move_bkwd")
 	var direction = Vector3.ZERO
 	direction.x = inp_dir.x
@@ -47,5 +45,12 @@ func _physics_process(delta):
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body == self:
-		global_position = last_safe_position
+		show_respawn_screen()
+		global_position = respawn_point
 		velocity = Vector3.ZERO
+
+func show_respawn_screen():
+	var screen = RESPAWN_SCREEN.instantiate()
+	get_tree().current_scene.add_child(screen)
+	await get_tree().create_timer(1.0).timeout
+	screen.queue_free()

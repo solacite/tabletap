@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=8 format=3 uid="uid://dl8subouq8tno"]
 
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/lobbydraft.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://8s556elrrtdg" path="res://scenes/player.tscn" id="2_0wfyh"]
@@ -12,8 +12,17 @@ ambient_light_energy = 0.5
 tonemap_mode = 3
 tonemap_exposure = 0.83
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_0wfyh"]
+size = Vector3(0.285828, 16.437, 121.558)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_sugp2"]
-size = Vector3(73.4463, 1, 72.3779)
+size = Vector3(30.7419, 18.6069, 22.6351)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jyhfs"]
+size = Vector3(20.8105, 20.3096, 55.1296)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tbgi4"]
+size = Vector3(30.4181, 15.2901, 31.266)
 
 [node name="Main" type="Node3D"]
 
@@ -37,7 +46,19 @@ safe_margin = 0.005
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.355, -47.6595, 83.7388)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.333, 0)
+transform = Transform3D(196.128, 0, 0, 0, 1, 0, 0, 0, 1, -24.0066, 7.25735, -7.67292)
+shape = SubResource("BoxShape3D_0wfyh")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4352, 5.93224, -45.1015)
 shape = SubResource("BoxShape3D_sugp2")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.7195, 3.03388, -19.2918)
+shape = SubResource("BoxShape3D_jyhfs")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3184, 6.05527, 0.321785)
+shape = SubResource("BoxShape3D_tbgi4")
 
 [connection signal="body_entered" from="Area3D" to="Player" method="_on_area_3d_body_entered"]
