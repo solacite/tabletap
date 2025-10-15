@@ -42,7 +42,7 @@ script = ExtResource("1_qfb68")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.11, 0.11)
 sprite_frames = SubResource("SpriteFrames_v057a")
-frame_progress = 0.343023
+frame_progress = 0.529481
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-17, -3)
@@ -52,3 +52,4 @@ shape = SubResource("CapsuleShape2D_258y4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(12700.8, 667.037)
+zoom = Vector2(1.38, 1.38)
