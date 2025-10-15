@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://4kjgckfgkd6u"]
+
+[ext_resource type="Texture2D" uid="uid://gl0wkwwlx8uj" path="res://assets/main menu/title char/title_char1.png" id="1_5phy8"]
+[ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="2_djmwj"]
+[ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="3_qygbf"]
+[ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="4_pu4a1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5phy8"]
+animations = [{
+"frames": [{
+"duration": 1.8,
+"texture": ExtResource("1_5phy8")
+}, {
+"duration": 0.8,
+"texture": ExtResource("2_djmwj")
+}, {
+"duration": 0.6,
+"texture": ExtResource("3_qygbf")
+}, {
+"duration": 0.8,
+"texture": ExtResource("4_pu4a1")
+}, {
+"duration": 0.3,
+"texture": ExtResource("3_qygbf")
+}, {
+"duration": 0.7,
+"texture": ExtResource("2_djmwj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Node2D" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 2193.0
+offset_bottom = 1340.0
+color = Color(0.933333, 0.74902, 0.513726, 1)
+
+[node name="Char" type="AnimatedSprite2D" parent="."]
+position = Vector2(238, 981)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_5phy8")
+autoplay = "default"
+frame_progress = 0.837413

@@ -1,0 +1,132 @@
+[gd_scene load_steps=20 format=3 uid="uid://d4kyso4fmj5h0"]
+
+[ext_resource type="Script" uid="uid://21d71fi087du" path="res://scripts/menu.gd" id="1_g6gyw"]
+[ext_resource type="Texture2D" uid="uid://bbceb3bia7ynb" path="res://assets/main menu/bg.png" id="1_yqeox"]
+[ext_resource type="Texture2D" uid="uid://cs7ftdomoe1gq" path="res://assets/main menu/buttons/start.png" id="2_con2f"]
+[ext_resource type="Texture2D" uid="uid://dlitgbsg64ok8" path="res://assets/main menu/buttons/start_hover.png" id="3_mhnvy"]
+[ext_resource type="Script" uid="uid://dn14os41g030d" path="res://scripts/slide_on_hover.gd" id="4_mhnvy"]
+[ext_resource type="Texture2D" uid="uid://c4n2t6gcenry4" path="res://assets/main menu/buttons/settings.png" id="5_g3eks"]
+[ext_resource type="Texture2D" uid="uid://dv83tj82jto5k" path="res://assets/main menu/buttons/settings_hover.png" id="6_v86rl"]
+[ext_resource type="Texture2D" uid="uid://tmt2diec642l" path="res://assets/main menu/buttons/help.png" id="7_70i5f"]
+[ext_resource type="Texture2D" uid="uid://bwulvc6wo60kl" path="res://assets/main menu/buttons/help_hover.png" id="8_mj5lg"]
+[ext_resource type="Texture2D" uid="uid://chotgno7xspk" path="res://assets/main menu/buttons/credits.png" id="9_ufwb2"]
+[ext_resource type="Texture2D" uid="uid://3kgy06ucdkyi" path="res://assets/main menu/buttons/credits_hover.png" id="10_6cdou"]
+[ext_resource type="Texture2D" uid="uid://gl0wkwwlx8uj" path="res://assets/main menu/title char/title_char1.png" id="11_mxgkd"]
+[ext_resource type="Texture2D" uid="uid://dbm0wfra5dj3v" path="res://assets/main menu/title/title1.png" id="11_ufwb2"]
+[ext_resource type="Texture2D" uid="uid://cg1m4jmsqdbxq" path="res://assets/main menu/title/title2.png" id="12_6cdou"]
+[ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="12_g6gyw"]
+[ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="13_3dmrc"]
+[ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="14_81l6r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rsfmq"]
+animations = [{
+"frames": [{
+"duration": 1.8,
+"texture": ExtResource("11_mxgkd")
+}, {
+"duration": 0.8,
+"texture": ExtResource("12_g6gyw")
+}, {
+"duration": 0.6,
+"texture": ExtResource("13_3dmrc")
+}, {
+"duration": 0.8,
+"texture": ExtResource("14_81l6r")
+}, {
+"duration": 0.3,
+"texture": ExtResource("13_3dmrc")
+}, {
+"duration": 0.7,
+"texture": ExtResource("12_g6gyw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i42df"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ufwb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6cdou")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.6
+}]
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource("1_g6gyw")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1082, 607)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_yqeox")
+
+[node name="Start" type="TextureButton" parent="."]
+offset_left = 891.0
+offset_top = 294.0
+offset_right = 2879.0
+offset_bottom = 702.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("2_con2f")
+texture_hover = ExtResource("3_mhnvy")
+script = ExtResource("4_mhnvy")
+
+[node name="Settings" type="TextureButton" parent="."]
+offset_left = 992.0
+offset_top = 479.0
+offset_right = 2980.0
+offset_bottom = 887.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("5_g3eks")
+texture_hover = ExtResource("6_v86rl")
+script = ExtResource("4_mhnvy")
+
+[node name="Help" type="TextureButton" parent="."]
+offset_left = 919.0
+offset_top = 656.0
+offset_right = 2907.0
+offset_bottom = 1064.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("7_70i5f")
+texture_hover = ExtResource("8_mj5lg")
+script = ExtResource("4_mhnvy")
+
+[node name="Credits" type="TextureButton" parent="."]
+offset_left = 898.0
+offset_top = 817.0
+offset_right = 2886.0
+offset_bottom = 1225.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("9_ufwb2")
+texture_hover = ExtResource("10_6cdou")
+script = ExtResource("4_mhnvy")
+
+[node name="Char" type="AnimatedSprite2D" parent="."]
+position = Vector2(669, 874)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_rsfmq")
+autoplay = "default"
+frame_progress = 0.451376
+
+[node name="Title" type="AnimatedSprite2D" parent="."]
+position = Vector2(538, 335)
+rotation = -0.248407
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_i42df")
+autoplay = "default"
+frame_progress = 0.75172
+
+[connection signal="mouse_entered" from="Start" to="Start" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Start" to="Start" method="_on_mouse_exited"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="Settings" to="Settings" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Settings" to="Settings" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Help" to="Help" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Help" to="Help" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Credits" to="Credits" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Credits" to="Credits" method="_on_mouse_exited"]
