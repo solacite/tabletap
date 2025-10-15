@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bad4m2lfx5kuu"
-path="res://.godot/imported/green block.png-10145de85e56a4953fd77e178244623c.ctex"
+uid="uid://c755hfdi3bw8f"
+path="res://.godot/imported/blue block.png-f2fad7ea51dae17054e3deffb2b32d03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tileset/green block.png"
-dest_files=["res://.godot/imported/green block.png-10145de85e56a4953fd77e178244623c.ctex"]
+source_file="res://assets/tileset/blue block.png"
+dest_files=["res://.godot/imported/blue block.png-f2fad7ea51dae17054e3deffb2b32d03.ctex"]
 
 [params]
 
