@@ -1275,6 +1275,9 @@ shape = SubResource("ConvexPolygonShape3D_brbpc")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Pole_004/StaticBody3D" index="1"]
 shape = SubResource("ConvexPolygonShape3D_4itri")
 
+[node name="Pole_005" parent="." index="34"]
+transform = Transform3D(4.30954, 0.00208084, 0.00403466, -0.00208149, 4.30954, 0.00066444, -0.00403432, -0.000666489, 4.30954, 78.3932, 5.88585, -89.332)
+
 [node name="StaticBody3D" type="StaticBody3D" parent="Pole_005" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Pole_005/StaticBody3D" index="0"]

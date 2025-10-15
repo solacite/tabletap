@@ -41,7 +41,7 @@ script = ExtResource("1_sugp2")
 environment = SubResource("Environment_jyhfs")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.852408, -0.284088, 0.43897, -0.109613, 0.917961, 0.381226, -0.511258, 0.276843, -0.813617, -69.3484, -9.90481, 51.0197)
+transform = Transform3D(-0.980132, 0.179257, 0.0849029, 0.193512, 0.95814, 0.210998, -0.0435261, 0.223236, -0.973792, -69.3484, -9.90481, 51.0197)
 light_energy = 1.192
 light_indirect_energy = 16.0
 light_specular = 0.0
@@ -235,7 +235,7 @@ transform = Transform3D(30.577, 0, -10.9073, 0, 32.4642, 0, 10.9072, 0, 30.5771,
 texture = ExtResource("9_choun")
 
 [node name="Back Mountain" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 160.437, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.56128, 10.8824, 29.8144)
 
 [node name="Mountain18" type="Sprite3D" parent="Back Mountain"]
 transform = Transform3D(76.4367, 0, -21.159, 0, 79.3112, 0, 21.159, 0, 76.4367, 480.539, -173.23, -1380.07)
@@ -243,7 +243,7 @@ modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("10_ya4ey")
 
 [node name="Mountain19" type="Sprite3D" parent="Back Mountain"]
-transform = Transform3D(34.4964, 0, 40.5116, 0, 53.2089, 0, -40.5116, 0, 34.4964, -807.191, -260.437, -631.092)
+transform = Transform3D(34.4964, 0, 40.5116, 0, 53.2089, 0, -40.5116, 0, 34.4964, -664.864, -27.3836, -690.297)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_eb6dy")
 
@@ -253,12 +253,12 @@ modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("10_ya4ey")
 
 [node name="Mountain21" type="Sprite3D" parent="Back Mountain"]
-transform = Transform3D(60.9748, 0, -0.114944, 0, 60.9749, 0, 0.114937, 0, 60.9748, 220.855, -25.5301, -823.325)
+transform = Transform3D(60.9748, 0, -0.114944, 0, 60.9749, 0, 0.114937, 0, 60.9748, 220.855, 199.39, -823.325)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("10_ya4ey")
 
 [node name="Mountain22" type="Sprite3D" parent="Back Mountain"]
-transform = Transform3D(-57.7139, 0, 54.4002, 0, 79.3112, 0, -54.4001, 0, -57.7139, -901.797, -61.3001, 1256.59)
+transform = Transform3D(-57.7139, 0, 54.4002, 0, 79.3112, 0, -54.4001, 0, -57.7139, -1030.38, -61.3001, 1185.5)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_eb6dy")
 
@@ -293,12 +293,12 @@ modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("10_ya4ey")
 
 [node name="Mountain29" type="Sprite3D" parent="Back Mountain"]
-transform = Transform3D(-32.2558, 0, -51.7446, 0, 60.9749, 0, 51.7446, 0, -32.2558, 786.768, 86.3998, 549.237)
+transform = Transform3D(-32.2558, 0, -51.7446, 0, 60.9749, 0, 51.7446, 0, -32.2558, 867.862, 86.3998, 519.928)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("10_ya4ey")
 
 [node name="Mountain30" type="Sprite3D" parent="Back Mountain"]
-transform = Transform3D(28.9246, 0, 73.8488, 0, 79.3112, 0, -73.8487, 0, 28.9246, -1661.98, -61.3861, -651.585)
+transform = Transform3D(28.9246, 0, 73.8488, 0, 79.3112, 0, -73.8487, 0, 28.9246, -1661.98, -61.3861, -482.142)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_eb6dy")
 
@@ -313,7 +313,7 @@ modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("10_ya4ey")
 
 [node name="Mountain33" type="Sprite3D" parent="Back Mountain"]
-transform = Transform3D(6.39901, 0, 60.6382, 0, 60.9749, 0, -60.6382, 0, 6.39902, -1134.97, 86.3138, -335.9)
+transform = Transform3D(6.39901, 0, 60.6382, 0, 60.9749, 0, -60.6382, 0, 6.39902, -1174.43, 86.3138, -587.364)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("10_ya4ey")
 
