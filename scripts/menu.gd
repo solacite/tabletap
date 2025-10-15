@@ -1,9 +1,9 @@
 extends Node2D
 
-var LoadingScreen = preload("res://scenes/loading_screen.tscn")
+var LoadingScreen = preload("res://scenes/ui/loading_screen.tscn")
 
 func _on_start_pressed() -> void:
-	transition_to_scene("res://scenes/main.tscn")
+	transition_to_scene("res://scenes/map/main.tscn")
 
 func transition_to_scene(target_scene_path: String):
 	var loading_screen = show_loading_screen()

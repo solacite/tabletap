@@ -10,7 +10,7 @@ var tgt_yaw := 0.0
 const PITCH_UP := deg_to_rad(10)
 const PITCH_DN := deg_to_rad(-20)
 
-const LOADING_SCREEN = preload("res://scenes/loading_screen.tscn")
+const LOADING_SCREEN = preload("res://scenes/ui/loading_screen.tscn")
 
 var respawn_point: Vector3 = Vector3(-91.69894, -31.41502, 60.24416)
 var pivot

@@ -1,6 +1,6 @@
 extends Node3D  # Or whatever your main scene's root is
 
-var OverlayUI = preload("res://scenes/overlay_ui.tscn")
+var OverlayUI = preload("res://scenes/ui/overlay_ui.tscn")
 
 func _ready():
 	show_overlay()

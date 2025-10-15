@@ -9,21 +9,27 @@
 [sub_resource type="SpriteFrames" id="SpriteFrames_ur7pv"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 1.8,
 "texture": ExtResource("2_qlg0r")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("3_tuyoq")
 }, {
-"duration": 1.0,
+"duration": 0.6,
 "texture": ExtResource("4_fjrip")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("5_smehm")
+}, {
+"duration": 0.3,
+"texture": ExtResource("4_fjrip")
+}, {
+"duration": 0.7,
+"texture": ExtResource("3_tuyoq")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 6.0
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qlg0r"]
@@ -36,6 +42,7 @@ script = ExtResource("1_3vyb7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41002, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
 autoplay = "default"
+frame_progress = 0.255301
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.816757, 7.17766, 0.0352783)

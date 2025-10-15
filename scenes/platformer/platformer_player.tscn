@@ -1,3 +1,54 @@
-[gd_scene format=3 uid="uid://8dt7ku57js8a"]
+[gd_scene load_steps=8 format=3 uid="uid://8dt7ku57js8a"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://gl0wkwwlx8uj" path="res://assets/main menu/title char/title_char1.png" id="1_258y4"]
+[ext_resource type="Script" uid="uid://bmyig2pywafin" path="res://scripts/platformer_player.gd" id="1_qfb68"]
+[ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="2_qfb68"]
+[ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="3_flv48"]
+[ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="4_esbnh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v057a"]
+animations = [{
+"frames": [{
+"duration": 1.8,
+"texture": ExtResource("1_258y4")
+}, {
+"duration": 0.8,
+"texture": ExtResource("2_qfb68")
+}, {
+"duration": 0.6,
+"texture": ExtResource("3_flv48")
+}, {
+"duration": 0.8,
+"texture": ExtResource("4_esbnh")
+}, {
+"duration": 0.3,
+"texture": ExtResource("3_flv48")
+}, {
+"duration": 0.7,
+"texture": ExtResource("2_qfb68")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_258y4"]
+radius = 14.9141
+height = 32.1622
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_qfb68")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.11, 0.11)
+sprite_frames = SubResource("SpriteFrames_v057a")
+frame_progress = 0.343023
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-17, -3)
+rotation = -0.18973
+scale = Vector2(3.34085, 5.64781)
+shape = SubResource("CapsuleShape2D_258y4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(12700.8, 667.037)

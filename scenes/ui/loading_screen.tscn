@@ -1,30 +1,30 @@
 [gd_scene load_steps=6 format=3 uid="uid://4kjgckfgkd6u"]
 
-[ext_resource type="Texture2D" uid="uid://gl0wkwwlx8uj" path="res://assets/main menu/title char/title_char1.png" id="1_5phy8"]
-[ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="2_djmwj"]
-[ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="3_qygbf"]
-[ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="4_pu4a1"]
+[ext_resource type="Texture2D" uid="uid://gl0wkwwlx8uj" path="res://assets/main menu/title char/title_char1.png" id="1_s2kth"]
+[ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="2_s41fs"]
+[ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="3_y06jl"]
+[ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="4_g5iak"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5phy8"]
 animations = [{
 "frames": [{
 "duration": 1.8,
-"texture": ExtResource("1_5phy8")
+"texture": ExtResource("1_s2kth")
 }, {
 "duration": 0.8,
-"texture": ExtResource("2_djmwj")
+"texture": ExtResource("2_s41fs")
 }, {
 "duration": 0.6,
-"texture": ExtResource("3_qygbf")
+"texture": ExtResource("3_y06jl")
 }, {
 "duration": 0.8,
-"texture": ExtResource("4_pu4a1")
+"texture": ExtResource("4_g5iak")
 }, {
 "duration": 0.3,
-"texture": ExtResource("3_qygbf")
+"texture": ExtResource("3_y06jl")
 }, {
 "duration": 0.7,
-"texture": ExtResource("2_djmwj")
+"texture": ExtResource("2_s41fs")
 }],
 "loop": true,
 "name": &"default",

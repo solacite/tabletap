@@ -1,6 +1,6 @@
 extends Node
 
-var LoadingScreen = preload("res://scenes/loading_screen.tscn")
+var LoadingScreen = preload("res://scenes/ui/loading_screen.tscn")
 var loading_screen_instance = null
 
 func show_loading_screen():

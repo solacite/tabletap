@@ -1,25 +1,26 @@
-[gd_scene load_steps=11 format=3 uid="uid://bks3un11o8ey6"]
+[gd_scene load_steps=12 format=3 uid="uid://bks3un11o8ey6"]
 
-[ext_resource type="Texture2D" uid="uid://c755hfdi3bw8f" path="res://assets/tileset/blue block.png" id="1_85uu4"]
-[ext_resource type="Texture2D" uid="uid://cvld5ay568pax" path="res://assets/general/even lighter sky.png" id="1_txcic"]
-[ext_resource type="Texture2D" uid="uid://bad4m2lfx5kuu" path="res://assets/tileset/green block.png" id="1_xxtnn"]
-[ext_resource type="Texture2D" uid="uid://caf6dguh523un" path="res://assets/tileset/orange block.png" id="3_nd818"]
-[ext_resource type="Texture2D" uid="uid://dvmbrf5jg87no" path="res://assets/tileset/white block.png" id="4_nd818"]
+[ext_resource type="Texture2D" uid="uid://cvld5ay568pax" path="res://assets/general/even lighter sky.png" id="1_pwwsi"]
+[ext_resource type="Texture2D" uid="uid://c755hfdi3bw8f" path="res://assets/tileset/blue block.png" id="2_6fuoi"]
+[ext_resource type="PackedScene" uid="uid://8dt7ku57js8a" path="res://scenes/platformer/platformer_player.tscn" id="2_qtlw1"]
+[ext_resource type="Texture2D" uid="uid://bad4m2lfx5kuu" path="res://assets/tileset/green block.png" id="3_qtlw1"]
+[ext_resource type="Texture2D" uid="uid://caf6dguh523un" path="res://assets/tileset/orange block.png" id="4_i0asj"]
+[ext_resource type="Texture2D" uid="uid://dvmbrf5jg87no" path="res://assets/tileset/white block.png" id="5_xiwqk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xlal6"]
-texture = ExtResource("1_85uu4")
+texture = ExtResource("2_6fuoi")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcnyv"]
-texture = ExtResource("1_xxtnn")
+texture = ExtResource("3_qtlw1")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_no5jp"]
-texture = ExtResource("3_nd818")
+texture = ExtResource("4_i0asj")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bareo"]
-texture = ExtResource("4_nd818")
+texture = ExtResource("5_xiwqk")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_85uu4"]
@@ -39,7 +40,10 @@ scale = Vector2(0.56, 0.56)
 modulate = Color(0.935762, 0.970643, 1, 1)
 position = Vector2(4333.93, -680.357)
 scale = Vector2(3.36909, 2.12527)
-texture = ExtResource("1_txcic")
+texture = ExtResource("1_pwwsi")
+
+[node name="Player" parent="ParallaxBackground/ParallaxLayer2" instance=ExtResource("2_qtlw1")]
+position = Vector2(-171.429, 139.286)
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
