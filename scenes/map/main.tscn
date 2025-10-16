@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=19 format=3 uid="uid://dl8subouq8tno"]
 
 [ext_resource type="Script" uid="uid://bk1hcmyue30iw" path="res://scripts/load_ui.gd" id="1_vey37"]
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/map/lobbydraft.tscn" id="2_awv4p"]
@@ -23,16 +23,19 @@ tonemap_mode = 3
 tonemap_exposure = 0.83
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0wfyh"]
-size = Vector3(0.285828, 16.437, 121.558)
+size = Vector3(0.285004, 16.437, 121.558)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sugp2"]
-size = Vector3(30.7419, 18.6069, 22.6351)
+size = Vector3(30.7419, 12.9618, 18.1662)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jyhfs"]
 size = Vector3(20.8105, 20.3096, 55.1296)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tbgi4"]
 size = Vector3(30.4181, 15.2901, 31.266)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vey37"]
+size = Vector3(2.57312, 1.08289, 5.64594)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_vey37")
@@ -62,11 +65,11 @@ safe_margin = 0.005
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.355, -47.6595, 83.7388)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Respawn"]
-transform = Transform3D(196.128, 0, 0, 0, 1, 0, 0, 0, 1, -24.0066, 7.25735, -7.67292)
+transform = Transform3D(196.128, 0, 0, 0, 1, 0, 0, 0, 1, -24.0874, 7.25735, -7.67292)
 shape = SubResource("BoxShape3D_0wfyh")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Respawn"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4352, 5.93224, -45.1015)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4352, 3.10968, -47.336)
 shape = SubResource("BoxShape3D_sugp2")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Respawn"]
@@ -524,5 +527,21 @@ texture = ExtResource("5_4bbo7")
 transform = Transform3D(4.13386, -2.91057, -6.14565, -4.50881, -6.55703, 0.0725604, -5.0903, 3.4443, -5.05519, -581.047, -8.70255, -259.7)
 modulate = Color(1, 1, 1, 0.705882)
 texture = ExtResource("6_78a88")
+
+[node name="Collision" type="Node3D" parent="."]
+
+[node name="Stairs" type="StaticBody3D" parent="Collision"]
+transform = Transform3D(1, 0, 0, 0, 0.715156, 0.698965, 0, -0.698965, 0.715156, -70.6043, -37.7865, 62.7545)
+
+[node name="Stairs" type="CollisionShape3D" parent="Collision/Stairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0209351, 0.0414734, 0.428165)
+shape = SubResource("BoxShape3D_vey37")
+
+[node name="Stairs2" type="StaticBody3D" parent="Collision"]
+transform = Transform3D(-4.37114e-08, 0.698415, -0.715693, 0, 0.715693, 0.698415, 1, 3.05287e-08, -3.12839e-08, -71.994, -34.5498, 66.2021)
+
+[node name="Stairs" type="CollisionShape3D" parent="Collision/Stairs2"]
+transform = Transform3D(1, 6.03961e-14, 0, 0, 1, -9.55058e-16, 0, -9.55059e-16, 1, 0.0209351, 2.28882e-05, 0.491432)
+shape = SubResource("BoxShape3D_vey37")
 
 [connection signal="body_entered" from="Respawn" to="Player" method="_on_area_3d_body_entered"]

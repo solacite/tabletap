@@ -32,8 +32,9 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_qlg0r"]
-size = Vector3(16.3312, 17.9609, 1.28979)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qlg0r"]
+radius = 4.47257
+height = 19.4657
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_3vyb7")
@@ -42,13 +43,14 @@ script = ExtResource("1_3vyb7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41002, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
 autoplay = "default"
-frame_progress = 0.568726
+frame_progress = 0.632743
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.816757, 7.17766, 0.0352783)
-shape = SubResource("BoxShape3D_qlg0r")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.357779, 7.17769, 0.00203322)
+shape = SubResource("CapsuleShape3D_qlg0r")
 
 [node name="Pivot" type="Node3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="Pivot"]
 transform = Transform3D(1, 0, 0, 0, 0.974636, 0.223794, 0, -0.223794, 0.974636, -0.131583, 15.8414, 27.888)
+current = true

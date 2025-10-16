@@ -75,4 +75,4 @@ animations = [{
 position = Vector2(776, 350)
 scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_3v6uj")
-frame_progress = 0.360652
+frame_progress = 0.54662

@@ -63,6 +63,7 @@ jump={
 
 [physics]
 
+2d/run_on_separate_thread=true
 3d/default_gravity=14.75
 
 [rendering]
