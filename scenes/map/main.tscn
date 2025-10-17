@@ -80,452 +80,465 @@ shape = SubResource("BoxShape3D_jyhfs")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3184, 6.05527, 0.321785)
 shape = SubResource("BoxShape3D_tbgi4")
 
-[node name="Orange Rect" type="Sprite3D" parent="."]
+[node name="Backdrop" type="Node3D" parent="."]
 transform = Transform3D(0.189119, 0, 0.172726, 0, 0.256126, 0, -0.172726, 0, 0.189119, -86.1599, -20.152, 81.2642)
+
+[node name="Orange Rect" type="Sprite3D" parent="Backdrop"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0)
 visible = false
 texture = ExtResource("4_g0txf")
 
-[node name="Clouds" type="Node3D" parent="."]
+[node name="Clouds" type="Node3D" parent="Backdrop"]
+transform = Transform3D(2.8829, 0, -2.63301, 0, 3.90433, 0, 2.63301, 0, 2.8829, 462.36, 78.68, -7.41685)
 visible = false
 
-[node name="Cloud" type="Sprite3D" parent="Clouds"]
+[node name="Cloud" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(0.2426, 0, 0.203732, 0, 0.316799, 0, -0.203732, 0, 0.2426, -91.5962, -27.4361, 38.4145)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("5_4bbo7")
 
-[node name="Cloud2" type="Sprite3D" parent="Clouds"]
+[node name="Cloud2" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(0.506195, 0, 0.108066, 0, 0.517602, 0, -0.108066, 0, 0.506195, -83.1725, -27.4361, 35.9494)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("6_78a88")
 
-[node name="Cloud3" type="Sprite3D" parent="Clouds"]
+[node name="Cloud3" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(0.248699, 0, 0.196241, 0, 0.316799, 0, -0.196241, 0, 0.248699, -71.2671, -22.346, 74.9578)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("5_4bbo7")
 
-[node name="Cloud4" type="Sprite3D" parent="Clouds"]
+[node name="Cloud4" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(0.209187, 0, 0.68529, 0, 0.716507, 0, -0.68529, 0, 0.209187, -137.14, -27.4361, 54.4595)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("5_4bbo7")
 
-[node name="Cloud5" type="Sprite3D" parent="Clouds"]
+[node name="Cloud5" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(0.485587, 0, 1.59076, 0, 1.66323, 0, -1.59076, 0, 0.485587, -152.096, -26.3864, 35.3948)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("6_78a88")
 
-[node name="Cloud6" type="Sprite3D" parent="Clouds"]
+[node name="Cloud6" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(0.209187, 0, 0.68529, 0, 0.716507, 0, -0.68529, 0, 0.209187, -137.14, -18.7224, 27.0104)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("7_x15uu")
 
-[node name="Cloud7" type="Sprite3D" parent="Clouds"]
+[node name="Cloud7" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(-0.212972, 0, 0.23453, 0, 0.316799, 0, -0.23453, 0, -0.212972, -153.295, -15.798, 117.627)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("6_78a88")
 
-[node name="Cloud8" type="Sprite3D" parent="Clouds"]
+[node name="Cloud8" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(0.458908, 0, 0.597693, 0, 0.753548, 0, -0.597693, 0, 0.458908, -64.1808, -22.2916, 74.6266)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("6_78a88")
 
-[node name="Cloud9" type="Sprite3D" parent="Clouds"]
+[node name="Cloud9" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(-0.444578, 0, 0.161093, 0, 0.472864, 0, -0.161093, 0, -0.444578, -70.3907, -22.4882, 46.4084)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("7_x15uu")
 
-[node name="Cloud10" type="Sprite3D" parent="Clouds"]
+[node name="Cloud10" type="Sprite3D" parent="Backdrop/Clouds"]
 transform = Transform3D(-0.782047, 0, 0.861208, 0, 1.1633, 0, -0.861208, 0, -0.782047, -163.842, -15.798, 117.627)
+modulate = Color(0.481789, 0.481789, 0.481789, 1)
 texture = ExtResource("7_x15uu")
 
-[node name="Grass" type="Node3D" parent="."]
+[node name="Grass" type="Node3D" parent="Backdrop"]
+transform = Transform3D(2.8829, 0, -2.63301, 0, 3.90433, 0, 2.63301, 0, 2.8829, 462.36, 78.68, -7.41685)
 
-[node name="Grass" type="Sprite3D" parent="Grass"]
+[node name="Grass" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(13.0624, 0, 0, 0, -5.70976e-07, 13.0624, 0, -13.0624, -5.70976e-07, -91.5962, -40.1762, 63.6387)
 texture = ExtResource("8_jdjfk")
 
-[node name="Grass2" type="Sprite3D" parent="Grass"]
+[node name="Grass2" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(-3.14264e-07, -7.18953, 0, -3.14264e-07, 1.37369e-14, 7.18953, -7.18953, 3.14264e-07, -3.14264e-07, 28.0058, -40.1762, 63.6387)
 texture = ExtResource("8_jdjfk")
 
-[node name="Grass3" type="Sprite3D" parent="Grass"]
+[node name="Grass3" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(-3.14264e-07, -7.18953, 0, -3.14264e-07, 1.37369e-14, 7.18953, -7.18953, 3.14264e-07, -3.14264e-07, -207.264, -40.1762, 63.6387)
 texture = ExtResource("8_jdjfk")
 
-[node name="Grass4" type="Sprite3D" parent="Grass"]
+[node name="Grass4" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(-3.14264e-07, -7.18953, 0, -3.14264e-07, 1.37369e-14, 7.18953, -7.18953, 3.14264e-07, -3.14264e-07, -85.921, -40.1762, -29.0854)
 texture = ExtResource("8_jdjfk")
 
-[node name="Grass5" type="Sprite3D" parent="Grass"]
+[node name="Grass5" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(-3.14264e-07, -7.18953, 0, -3.14264e-07, 1.37369e-14, 7.18953, -7.18953, 3.14264e-07, -3.14264e-07, -85.921, -40.1762, 171.875)
 texture = ExtResource("8_jdjfk")
 
-[node name="Grass6" type="Sprite3D" parent="Grass"]
+[node name="Grass6" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, 24.3257, -40.1762, 167.805)
 texture = ExtResource("8_jdjfk")
 
-[node name="Grass7" type="Sprite3D" parent="Grass"]
+[node name="Grass7" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, 26.542, -40.1762, -23.6814)
 texture = ExtResource("8_jdjfk")
 
-[node name="Grass8" type="Sprite3D" parent="Grass"]
+[node name="Grass8" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, -208.048, -40.1762, 162.068)
 texture = ExtResource("8_jdjfk")
 
-[node name="Grass9" type="Sprite3D" parent="Grass"]
+[node name="Grass9" type="Sprite3D" parent="Backdrop/Grass"]
 transform = Transform3D(7.18953, 0, 0, 0, -3.14264e-07, 7.18953, 0, -7.18953, -3.14264e-07, -207.974, -40.1762, -29.2908)
 texture = ExtResource("8_jdjfk")
 
-[node name="Mountain" type="Node3D" parent="."]
+[node name="Mountain" type="Node3D" parent="Backdrop"]
+transform = Transform3D(2.8829, 0, -2.63301, 0, 3.90433, 0, 2.63301, 0, 2.8829, 462.36, 78.68, -7.41685)
 visible = false
 
-[node name="Mountain" type="Sprite3D" parent="Mountain"]
+[node name="Mountain" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(23.5469, 0, 0, 0, 23.5469, 0, 0, 0, 23.5469, -38.6226, -117.011, -395.006)
 texture = ExtResource("9_fec4r")
 
-[node name="Mountain2" type="Sprite3D" parent="Mountain"]
+[node name="Mountain2" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(6.66173, 0, 14.324, 0, 15.7973, 0, -14.324, 0, 6.66173, -347.759, -142.902, -78.7031)
 texture = ExtResource("9_fec4r")
 
-[node name="Mountain3" type="Sprite3D" parent="Mountain"]
+[node name="Mountain3" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(27.3474, 0, 17.4941, 0, 32.4642, 0, -17.4941, 0, 27.3474, -275.906, 11.2644, -259.749)
 texture = ExtResource("10_808uu")
 
-[node name="Mountain4" type="Sprite3D" parent="Mountain"]
+[node name="Mountain4" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(17.4559, 0, 4.79669, 0, 18.103, 0, -4.79669, 0, 17.4559, -68.8284, -73.1597, -215.134)
 texture = ExtResource("10_808uu")
 
-[node name="Mountain5" type="Sprite3D" parent="Mountain"]
+[node name="Mountain5" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-20.8226, 0, 10.9943, 0, 23.5469, 0, -10.9943, 0, -20.8226, -225.313, -83.7795, 468.915)
 texture = ExtResource("9_fec4r")
 
-[node name="Mountain6" type="Sprite3D" parent="Mountain"]
+[node name="Mountain6" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-12.579, 0, -9.5563, 0, 15.7973, 0, 9.5563, 0, -12.579, 169.413, -109.67, 319.644)
 texture = ExtResource("9_fec4r")
 
-[node name="Mountain7" type="Sprite3D" parent="Mountain"]
+[node name="Mountain7" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-32.3516, 0, -2.70129, 0, 32.4642, 0, 2.70129, 0, -32.3516, 47.6709, 44.4955, 460.097)
 texture = ExtResource("10_808uu")
 
-[node name="Mountain8" type="Sprite3D" parent="Mountain"]
+[node name="Mountain8" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-17.676, 0, 3.90864, 0, 18.103, 0, -3.90863, 0, -17.676, -114.617, -39.9286, 323.957)
 texture = ExtResource("10_808uu")
 
-[node name="Mountain9" type="Sprite3D" parent="Mountain"]
+[node name="Mountain9" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-12.4186, 0, -20.0058, 0, 23.5469, 0, 20.0058, 0, -12.4186, 338.704, -83.7795, 253.303)
 texture = ExtResource("9_fec4r")
 
-[node name="Mountain10" type="Sprite3D" parent="Mountain"]
+[node name="Mountain10" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(8.65648, 0, -13.2144, 0, 15.7973, 0, 13.2144, 0, 8.65648, 217.303, -109.67, -150.866)
 texture = ExtResource("9_fec4r")
 
-[node name="Mountain11" type="Sprite3D" parent="Mountain"]
+[node name="Mountain11" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(0.440242, 0, -32.4612, 0, 32.4642, 0, 32.4612, 0, 0.440237, 348.931, 44.4955, -19.6317)
 texture = ExtResource("10_808uu")
 
-[node name="Mountain12" type="Sprite3D" parent="Mountain"]
+[node name="Mountain12" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-5.13091, 0, -17.3606, 0, 18.103, 0, 17.3606, 0, -5.13092, 201.812, -39.9286, 132.775)
 texture = ExtResource("10_808uu")
 
-[node name="Mountain13" type="Sprite3D" parent="Mountain"]
+[node name="Mountain13" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(2.42698, 0, 23.4215, 0, 23.5469, 0, -23.4215, 0, 2.42698, -593.965, -83.805, -16.8619)
 texture = ExtResource("9_fec4r")
 
-[node name="Mountain14" type="Sprite3D" parent="Mountain"]
+[node name="Mountain14" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-13.5611, 0, 8.10263, 0, 15.7973, 0, -8.10263, 0, -13.5611, -308.14, -109.696, 293.613)
 texture = ExtResource("9_fec4r")
 
-[node name="Mountain15" type="Sprite3D" parent="Mountain"]
+[node name="Mountain15" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-14.5822, 0, 29.0049, 0, 32.4642, 0, -29.0049, 0, -14.5822, -483.885, 44.47, 233.099)
 texture = ExtResource("10_808uu")
 
-[node name="Mountain16" type="Sprite3D" parent="Mountain"]
+[node name="Mountain16" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(-2.97196, 0, 17.8573, 0, 18.103, 0, -17.8573, 0, -2.97195, -418.164, -39.9541, 31.7224)
 texture = ExtResource("10_808uu")
 
-[node name="Mountain17" type="Sprite3D" parent="Mountain"]
+[node name="Mountain17" type="Sprite3D" parent="Backdrop/Mountain"]
 transform = Transform3D(30.577, 0, -10.9073, 0, 32.4642, 0, 10.9072, 0, 30.5771, 78.7348, 11.2644, -314.33)
 texture = ExtResource("10_808uu")
 
-[node name="Back Mountain" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.56128, 10.8824, 29.8144)
+[node name="Back Mountain" type="Node3D" parent="Backdrop"]
+transform = Transform3D(2.8829, 0, -2.63301, 0, 3.90433, 0, 2.63301, 0, 2.8829, 379.357, 121.169, 74.4242)
 
-[node name="Mountain18" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain18" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(76.4367, 0, -21.159, 0, 79.3112, 0, 21.159, 0, 76.4367, 480.539, -173.23, -1380.07)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain19" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain19" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(34.4964, 0, 40.5116, 0, 53.2089, 0, -40.5116, 0, 34.4964, -664.864, -27.3836, -690.297)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("12_1cbjo")
 
-[node name="Mountain20" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain20" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(104.494, 0, 32.2144, 0, 109.347, 0, -32.2144, 0, 104.494, -411.259, 258.83, -1154.23)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain21" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain21" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(60.9748, 0, -0.114944, 0, 60.9749, 0, 0.114937, 0, 60.9748, 220.855, 199.39, -823.325)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain22" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain22" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-57.7139, 0, 54.4002, 0, 79.3112, 0, -54.4001, 0, -57.7139, -1030.38, -61.3001, 1185.5)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("12_1cbjo")
 
-[node name="Mountain23" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain23" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-49.4206, 0, -19.7178, 0, 53.2089, 0, 19.7178, 0, -49.4206, 513.678, -148.507, 1126.73)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("12_1cbjo")
 
-[node name="Mountain24" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain24" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-107.446, 0, 20.3021, 0, 109.347, 0, -20.3021, 0, -107.446, -7.72651, 370.76, 1473.26)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain25" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain25" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-53.8666, 0, 28.5715, 0, 60.9749, 0, -28.5715, 0, -53.8666, -412.205, 86.3998, 885.502)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain26" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain26" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-58.2898, 0, -53.7826, 0, 79.3112, 0, 53.7826, 0, -58.2898, 1122.83, -61.3001, 1063.5)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("12_1cbjo")
 
-[node name="Mountain27" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain27" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(16.2259, 0, -50.6746, 0, 53.2089, 0, 50.6745, 0, 16.2259, 1091.93, -148.507, -357.585)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("12_1cbjo")
 
-[node name="Mountain28" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain28" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-27.7402, 0, -105.77, 0, 109.347, 0, 105.77, 0, -27.7403, 1401.29, 370.76, 186.701)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain29" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain29" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-32.2558, 0, -51.7446, 0, 60.9749, 0, 51.7446, 0, -32.2558, 867.862, 86.3998, 519.928)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain30" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain30" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(28.9246, 0, 73.8488, 0, 79.3112, 0, -73.8487, 0, 28.9246, -1661.98, -61.3861, -482.142)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("12_1cbjo")
 
-[node name="Mountain31" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain31" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-36.7403, 0, 38.4882, 0, 53.2089, 0, -38.4882, 0, -36.7403, -1013.14, -148.593, 613.104)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("12_1cbjo")
 
-[node name="Mountain32" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain32" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(-21.2726, 0, 107.258, 0, 109.347, 0, -107.258, 0, -21.2726, -1529.26, 370.673, 258.741)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain33" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain33" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(6.39901, 0, 60.6382, 0, 60.9749, 0, -60.6382, 0, 6.39902, -1174.43, 86.3138, -587.364)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Mountain34" type="Sprite3D" parent="Back Mountain"]
+[node name="Mountain34" type="Sprite3D" parent="Backdrop/Back Mountain"]
 transform = Transform3D(89.4566, 0, -62.8829, 0, 109.347, 0, 62.8828, 0, 89.4566, 789.005, 258.83, -1012.73)
 modulate = Color(0.780392, 0.905882, 0.741176, 1)
 texture = ExtResource("11_gt8x6")
 
-[node name="Back Clouds" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 73.9334, 0)
+[node name="Back Clouds" type="Node3D" parent="Backdrop"]
+transform = Transform3D(2.8829, 0, -2.63301, 0, 3.90433, 0, 2.63301, 0, 2.8829, 462.36, 367.34, -7.41685)
 
-[node name="Back Cloud" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(7.35198, 0, 0, 0, 7.35198, 0, 0, 0, 7.35198, -52.2535, -26.0295, -438.443)
-modulate = Color(1, 1, 1, 0.705882)
+visible = false
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("7_x15uu")
 
-[node name="Back Cloud2" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud2" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(7.59572, 0, 2.37366, 0, 7.95797, 0, -2.37366, 0, 7.59572, -141.6, -17.1145, -446.547)
-visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud3" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud3" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(4.0477, 0, 2.65884, 0, 4.84286, 0, -2.65884, 0, 4.0477, -265.901, 38.4949, -407.21)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud4" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud4" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(6.40202, 0, 4.72688, 0, 7.95797, 0, -4.72688, 0, 6.40202, -363.034, 38.8106, -446.547)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud5" type="Sprite3D" parent="Back Clouds"]
-transform = Transform3D(2.63333, 0, -0.737271, 0, 2.73459, 0, 0.737271, 0, 2.63333, 10.5488, 42.1869, -446.547)
-modulate = Color(1, 1, 1, 0.705882)
+[node name="Back Cloud5" type="Sprite3D" parent="Backdrop/Back Clouds"]
+transform = Transform3D(2.63333, 0, -0.737271, 0, 2.73459, 0, 0.737271, 0, 2.63333, 169.475, -53.4836, -364.466)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud6" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud6" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(5.8898, -2.72185, 4.60771, -4.23723, -6.55703, 1.5429, 3.26885, -3.5953, -6.3022, 284.074, -12.1022, -344.837)
-modulate = Color(1, 1, 1, 0.705882)
+visible = false
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud7" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud7" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(2.67599, -1.65639, 3.68086, -2.73732, -3.99031, 0.194388, 2.96638, -2.18794, -3.14114, 168.833, 11.5883, -423.887)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud8" type="Sprite3D" parent="Back Clouds"]
-transform = Transform3D(5.87035, -3.99689, 3.59071, -4.50881, -6.55703, 0.0725606, 2.92215, -2.08794, -7.10147, 94.4338, -8.70255, -401.163)
-visible = false
-modulate = Color(1, 1, 1, 0.705882)
+[node name="Back Cloud8" type="Sprite3D" parent="Backdrop/Back Clouds"]
+transform = Transform3D(5.87035, -3.99689, 3.59071, -4.50881, -6.55703, 0.0725606, 2.92215, -2.08794, -7.10147, 57.2999, -8.70255, -401.163)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud9" type="Sprite3D" parent="Back Clouds"]
-transform = Transform3D(1.67521, 0, -7.15859, 0, 7.35198, 0, 7.15858, 0, 1.67521, 458.305, -26.0295, 75.4088)
-visible = false
-modulate = Color(1, 1, 1, 0.705882)
+[node name="Back Cloud9" type="Sprite3D" parent="Backdrop/Back Clouds"]
+transform = Transform3D(1.67521, 0, -7.15859, 0, 7.35198, 0, 7.15858, 0, 1.67521, 458.305, -5.66714, -71.6741)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("7_x15uu")
 
-[node name="Back Cloud10" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud10" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(4.04197, 0, -6.85506, 0, 7.95797, 0, 6.85506, 0, 4.04197, 445.838, -17.1145, -13.4338)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud11" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud11" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(3.5112, 0, -3.33538, 0, 4.84286, 0, 3.33538, 0, 3.5112, 379.212, 38.4949, -125.502)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud12" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud12" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(6.06129, 0, -5.15656, 0, 7.95797, 0, 5.15656, 0, 6.06129, 395.382, 38.8106, -229.043)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud13" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud13" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-0.117851, 0, -2.73205, 0, 2.73459, 0, 2.73205, 0, -0.117851, 480.506, 42.1869, 134.712)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud14" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud14" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-1.84082, 2.88053, 7.18632, -4.23723, -6.55703, 1.5429, 6.4797, -3.46947, 3.0505, 443.796, -12.1022, 424.218)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud15" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud15" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-2.27861, 1.75296, 3.89723, -2.73732, -3.99031, 0.194388, 3.28151, -2.11136, 2.8683, 494.509, 11.5883, 293.997)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud16" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud16" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-1.50767, 1.12229, 7.73283, -4.50881, -6.55703, 0.0725605, 6.38176, -4.36751, 1.87813, 455.43, -8.70255, 226.732)
-modulate = Color(1, 1, 1, 0.705882)
+visible = false
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud17" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud17" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-7.34982, 0, -0.178343, 0, 7.35198, 0, 0.178343, 0, -7.34982, -13.5147, -26.0295, 633.336)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("7_x15uu")
 
-[node name="Back Cloud18" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud18" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-7.53591, 0, -2.55722, 0, 7.95797, 0, 2.55722, 0, -7.53591, 76.002, -17.1145, 639.27)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud19" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud19" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-3.98201, 0, -2.75625, 0, 4.84286, 0, 2.75624, 0, -3.98201, 199.312, 38.4949, 596.929)
-visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud20" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud20" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-6.28547, 0, -4.88079, 0, 7.95797, 0, 4.88079, 0, -6.28548, 297.371, 38.8106, 633.898)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud21" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud21" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-2.65044, 0, 0.673175, 0, 2.73459, 0, -0.673175, 0, -2.65044, -76.102, 42.1869, 642.961)
-visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud22" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud22" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-5.96737, 2.80827, -4.45348, -4.23723, -6.55703, 1.5429, -3.12501, 3.52822, 6.41212, -352.014, -12.1022, 547.915)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud23" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud23" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-2.74716, 1.70898, -3.60358, -2.73732, -3.99031, 0.194388, -2.9006, 2.14711, 3.22951, -234.89, 11.5883, 624.147)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud24" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud24" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-5.9395, 4.04637, -3.41739, -4.50881, -6.55703, 0.0725605, -2.77888, 1.99037, 7.18648, -161.063, -8.70255, 599.625)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud25" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud25" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-1.5974, 0, 7.17635, 0, 7.35198, 0, -7.17635, 0, -1.5974, -469.656, -26.0295, 371.103)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("7_x15uu")
 
-[node name="Back Cloud26" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud26" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-3.96731, 0, 6.89853, 0, 7.95797, 0, -6.89853, 0, -3.96731, -634.956, -17.1145, 274.452)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud27" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud27" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-3.47478, 0, 3.3733, 0, 4.84286, 0, -3.3733, 0, -3.47478, -569.551, 38.4949, 387.236)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud28" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud28" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(-6.00495, 0, 5.22205, 0, 7.95797, 0, -5.22205, 0, -6.00496, -586.844, 38.8106, 490.596)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud29" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud29" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(0.147502, 0, 2.73061, 0, 2.73459, 0, -2.73061, 0, 0.147502, -668.014, 42.1869, 125.938)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud30" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud30" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(1.91105, -2.91802, -7.15278, -4.23723, -6.55703, 1.5429, -6.45934, 3.43799, -3.12833, -628.163, -12.1022, -163.152)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud31" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud31" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(2.31409, -1.77577, -3.86586, -2.73732, -3.99031, 0.194388, -3.25658, 2.09221, -2.91043, -680.286, 11.5883, -33.4891)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud32" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud32" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(1.57686, -1.16964, -7.71199, -4.50881, -6.55703, 0.0725605, -6.36501, 4.35507, -1.96196, -641.94, -8.70255, 34.1958)
-visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud33" type="Sprite3D" parent="Back Clouds"]
-transform = Transform3D(1.29467, 0, 2.4087, 0, 2.73459, 0, -2.4087, 0, 1.29467, -643.659, 42.1869, -187.754)
-modulate = Color(1, 1, 1, 0.705882)
+[node name="Back Cloud33" type="Sprite3D" parent="Backdrop/Back Clouds"]
+transform = Transform3D(1.29467, 0, 2.4087, 0, 2.73459, 0, -2.4087, 0, 1.29467, -581.327, 42.1869, -370.921)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud34" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud34" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(4.47644, -4.10302, -5.14354, -4.23723, -6.55703, 1.5429, -5.03355, 1.87079, -5.87305, -484.658, -12.1022, -432.457)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
-[node name="Back Cloud35" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud35" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(3.47928, -2.49691, -2.26127, -2.73732, -3.99031, 0.194388, -1.96341, 1.13848, -4.2781, -586.971, 11.5883, -337.267)
 visible = false
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("5_4bbo7")
 
-[node name="Back Cloud36" type="Sprite3D" parent="Back Clouds"]
+[node name="Back Cloud36" type="Sprite3D" parent="Backdrop/Back Clouds"]
 transform = Transform3D(4.13386, -2.91057, -6.14565, -4.50881, -6.55703, 0.0725604, -5.0903, 3.4443, -5.05519, -581.047, -8.70255, -259.7)
-modulate = Color(1, 1, 1, 0.705882)
+modulate = Color(1, 1, 1, 0.854902)
 texture = ExtResource("6_78a88")
 
 [node name="Collision" type="Node3D" parent="."]
@@ -543,5 +556,10 @@ transform = Transform3D(-4.37114e-08, 0.698415, -0.715693, 0, 0.715693, 0.698415
 [node name="Stairs" type="CollisionShape3D" parent="Collision/Stairs2"]
 transform = Transform3D(1, 6.03961e-14, 0, 0, 1, -9.55058e-16, 0, -9.55059e-16, 1, 0.0209351, 2.28882e-05, 0.491432)
 shape = SubResource("BoxShape3D_vey37")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.4291, -44.7427, 45.8919)
 
 [connection signal="body_entered" from="Respawn" to="Player" method="_on_area_3d_body_entered"]
