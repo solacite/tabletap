@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=22 format=3 uid="uid://dl8subouq8tno"]
 
 [ext_resource type="Script" uid="uid://bk1hcmyue30iw" path="res://scripts/load_ui.gd" id="1_vey37"]
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/map/lobbydraft.tscn" id="2_awv4p"]
@@ -35,7 +35,16 @@ size = Vector3(20.8105, 20.3096, 55.1296)
 size = Vector3(30.4181, 15.2901, 31.266)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vey37"]
-size = Vector3(2.57312, 1.08289, 5.64594)
+size = Vector3(2.11029, 1.08289, 5.57567)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_awv4p"]
+size = Vector3(2.64954, 0.825684, 3.83069)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jhpig"]
+size = Vector3(13.6558, 0.173828, 12.8164)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g0txf"]
+size = Vector3(1.60944, 0.203918, 2.59082)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_vey37")
@@ -571,12 +580,25 @@ shape = SubResource("BoxShape3D_vey37")
 transform = Transform3D(-4.37114e-08, 0.698415, -0.715693, 0, 0.715693, 0.698415, 1, 3.05287e-08, -3.12839e-08, -71.994, -34.5498, 66.2021)
 
 [node name="Stairs" type="CollisionShape3D" parent="Collision/Stairs2"]
-transform = Transform3D(1, 6.03961e-14, 0, 0, 1, -9.55058e-16, 0, -9.55059e-16, 1, 0.0209351, 2.28882e-05, 0.491432)
+transform = Transform3D(1, 9.32115e-10, 8.82604e-10, -9.051e-10, 0.999569, -0.0293522, -9.09569e-10, 0.0293522, 0.999569, 0.25235, -0.0306473, 0.402021)
 shape = SubResource("BoxShape3D_vey37")
+
+[node name="StairSquare" type="StaticBody3D" parent="Collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision/StairSquare"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.5817, -35.6328, 66.536)
+shape = SubResource("BoxShape3D_awv4p")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Collision"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Collision/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.4291, -44.7427, 45.8919)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.9059, -32.1, 61.8343)
+shape = SubResource("BoxShape3D_jhpig")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision/StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.9482, -32.1028, 66.7148)
+shape = SubResource("BoxShape3D_g0txf")
 
 [connection signal="body_entered" from="Respawn" to="Player" method="_on_area_3d_body_entered"]
