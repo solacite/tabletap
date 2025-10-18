@@ -51,6 +51,7 @@ rotation = -1.57402
 scale = Vector2(0.700541, 6.95562)
 
 [node name="Player 2" type="Button" parent="."]
+visible = false
 offset_left = 1706.09
 offset_top = 64.9184
 offset_right = 1776.09
@@ -59,6 +60,7 @@ scale = Vector2(2.19939, 1.22046)
 text = "player 1"
 
 [node name="ColorRect4" type="ColorRect" parent="."]
+visible = false
 offset_left = 1585.09
 offset_top = 52.9184
 offset_right = 1625.09
