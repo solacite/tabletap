@@ -48,6 +48,12 @@ func _physics_process(delta):
 			velocity.y = jump_velocity
 
 	move_and_slide()
+	
+	var is_moving = abs(velocity.x) > 0.01 or abs(velocity.z) > 0.01
+	if is_moving:
+		$AnimatedSprite3D.play("walk")
+	else:
+		$AnimatedSprite3D.play("idle")
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body == self:

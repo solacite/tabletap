@@ -45,8 +45,8 @@ scale = Vector2(1.88669, 1.19015)
 texture = ExtResource("1_pwwsi")
 
 [node name="Player" parent="." instance=ExtResource("2_qtlw1")]
-position = Vector2(-174, 102)
-scale = Vector2(0.275, 0.275)
+position = Vector2(-165, 78)
+scale = Vector2(0.53, 0.53)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_85uu4")

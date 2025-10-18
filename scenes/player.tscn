@@ -5,11 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="3_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="4_fjrip"]
 [ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="5_smehm"]
-[ext_resource type="Texture2D" uid="uid://bfu3mj3ko2ynf" path="res://assets/jun walk/jun walk 1.png" id="6_y4r1p"]
-[ext_resource type="Texture2D" uid="uid://dgwiihgf4yts1" path="res://assets/jun walk/jun walk 2.png" id="7_d2wvv"]
-[ext_resource type="Texture2D" uid="uid://dbh5ld6qujn08" path="res://assets/jun walk/jun walk 3.png" id="8_3v2ag"]
-[ext_resource type="Texture2D" uid="uid://0ek1f3yvhk4s" path="res://assets/jun walk/jun walk 4.png" id="9_jej6c"]
-[ext_resource type="Texture2D" uid="uid://bp2k1hrbppukr" path="res://assets/jun walk/jun walk 5.png" id="10_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://bj83pho6ngoon" path="res://assets/jun walk/jun walk 1.png" id="6_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://b3tpwvr4hy2rj" path="res://assets/jun walk/jun walk 2.png" id="7_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://cop6lsbx53n32" path="res://assets/jun walk/jun walk 3.png" id="8_3v2ag"]
+[ext_resource type="Texture2D" uid="uid://cf73oqfn42gx8" path="res://assets/jun walk/jun walk 4.png" id="9_jej6c"]
+[ext_resource type="Texture2D" uid="uid://diraokt8l1hu" path="res://assets/jun walk/jun walk 5.png" id="10_f1ej7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ur7pv"]
 animations = [{
@@ -65,14 +65,14 @@ height = 19.4657
 script = ExtResource("1_3vyb7")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41002, 7.02015, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.329251, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
 animation = &"walk"
 autoplay = "idle"
-frame_progress = 0.973443
+frame_progress = 0.343827
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.357779, 7.17769, 0.00203322)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.122592, 7.17769, 0.00203322)
 shape = SubResource("CapsuleShape3D_qlg0r")
 
 [node name="Pivot" type="Node3D" parent="."]

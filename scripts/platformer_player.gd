@@ -106,7 +106,7 @@ func update_animations():
 	var animated_sprite = $AnimatedSprite2D
 	
 	if velocity.x != 0:
-		animated_sprite.play("run")
+		animated_sprite.play("walk")
 		animated_sprite.flip_h = velocity.x < 0
 		
 	else:
