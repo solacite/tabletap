@@ -25,7 +25,10 @@ animations = [{
 "duration": 0.8,
 "texture": ExtResource("4_l2t3u")
 }, {
-"duration": 1.0,
+"duration": 0.6,
+"texture": ExtResource("3_qsstr")
+}, {
+"duration": 0.6,
 "texture": ExtResource("3_qsstr")
 }],
 "loop": true,
@@ -64,7 +67,7 @@ scale = Vector2(0.11, 0.11)
 sprite_frames = SubResource("SpriteFrames_v057a")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.780644
+frame_progress = 0.491836
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.999998, 2.5)
