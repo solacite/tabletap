@@ -5,11 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="3_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="4_fjrip"]
 [ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="5_smehm"]
-[ext_resource type="Texture2D" uid="uid://1o7l8dr47vwe" path="res://assets/jun walk/jun walk 1.png" id="6_y4r1p"]
-[ext_resource type="Texture2D" uid="uid://bhw1i415so2cg" path="res://assets/jun walk/jun walk 2.png" id="7_d2wvv"]
-[ext_resource type="Texture2D" uid="uid://cjoudpg6no2yf" path="res://assets/jun walk/jun walk 3.png" id="8_3v2ag"]
-[ext_resource type="Texture2D" uid="uid://bhpimsdfqmqmg" path="res://assets/jun walk/jun walk 4.png" id="9_jej6c"]
-[ext_resource type="Texture2D" uid="uid://bjpwv6lwno26o" path="res://assets/jun walk/jun walk 5.png" id="10_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://bfu3mj3ko2ynf" path="res://assets/jun walk/jun walk 1.png" id="6_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://dgwiihgf4yts1" path="res://assets/jun walk/jun walk 2.png" id="7_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://dbh5ld6qujn08" path="res://assets/jun walk/jun walk 3.png" id="8_3v2ag"]
+[ext_resource type="Texture2D" uid="uid://0ek1f3yvhk4s" path="res://assets/jun walk/jun walk 4.png" id="9_jej6c"]
+[ext_resource type="Texture2D" uid="uid://bp2k1hrbppukr" path="res://assets/jun walk/jun walk 5.png" id="10_f1ej7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ur7pv"]
 animations = [{
@@ -37,7 +37,7 @@ animations = [{
 "speed": 6.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 1.1,
 "texture": ExtResource("6_y4r1p")
 }, {
 "duration": 0.8,
@@ -69,7 +69,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41002, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
 animation = &"walk"
 autoplay = "idle"
-frame_progress = 0.71765
+frame_progress = 0.973443
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.357779, 7.17769, 0.00203322)
