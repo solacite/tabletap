@@ -11,6 +11,7 @@ var tgt_yaw = 0.0
 const PITCH_UP = deg_to_rad(10)
 const PITCH_DN = deg_to_rad(-20)
 
+const LOADING_SCREEN = preload("res://scenes/ui/loading_screen.tscn")
 var respawn_point: Vector3 = Vector3(-91.69894, -31.41502, 60.24416)
 var pivot
 
@@ -24,7 +25,11 @@ var camera_offset = Vector3(-0.132, 15.841, 27.888)
 var shake_amount = 0.0
 var shake_time = 0.0
 var shake_duration = 0.2
-var shake_strength = 0.5
+var shake_strength = 0.3
+
+# Track fall duration
+var fall_time = 0.0
+var last_fall_time = 0.0
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -58,10 +63,6 @@ func _process(delta):
 	else:
 		$Pivot/Camera3D.transform.origin = camera_offset
 
-func start_screen_shake():
-	shake_time = shake_duration
-	shake_amount = shake_strength
-
 func _physics_process(delta):
 	# Movement input
 	var inp_dir = Input.get_vector("move_left", "move_right", "move_fwd", "move_bkwd")
@@ -76,6 +77,15 @@ func _physics_process(delta):
 	var on_floor = is_on_floor()
 	var just_landed = on_floor and not was_on_floor
 	var is_moving = abs(velocity.x) > 0.01 or abs(velocity.z) > 0.01
+
+	# Track fall duration
+	if not on_floor:
+		fall_time += delta
+	elif just_landed:
+		last_fall_time = fall_time # Save air time before reset!
+		fall_time = 0.0
+	else:
+		fall_time = 0.0
 
 	# Apply gravity if not on floor
 	if not on_floor:
@@ -93,7 +103,9 @@ func _physics_process(delta):
 		$AnimatedSprite3D.play("land")
 		anim_state = "land"
 		land_playing = true
-		start_screen_shake()
+		var shake_factor = clamp(last_fall_time, 0.5, 3.0)
+		shake_time = shake_duration
+		shake_amount = shake_strength * shake_factor
 	elif land_playing:
 		pass
 	elif not on_floor and anim_state != "fall" and anim_state != "jump":
@@ -122,7 +134,15 @@ func _on_anim_finished():
 			anim_state = "idle"
 	# After jump, fall anim will be handled by state machine
 
+# RESTORE THIS TO SHOW LOADING SCREEN AND RESPAWN
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body == self:
+		await show_loading_screen()
 		global_position = respawn_point
 		velocity = Vector3.ZERO
+
+func show_loading_screen() -> void:
+	var screen = LOADING_SCREEN.instantiate()
+	get_tree().current_scene.add_child(screen)
+	await get_tree().create_timer(1.0).timeout
+	screen.queue_free()
