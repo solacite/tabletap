@@ -56,16 +56,13 @@ func _physics_process(delta):
 			is_jumping = true
 	
 	if on_floor and anim_state == "jump":
-		# If landed and still playing jump, force to idle or walk
 		is_jumping = false
 		if abs(velocity.x) > 0.01 or abs(velocity.z) > 0.01:
 			$AnimatedSprite3D.play("walk")
 			anim_state = "walk"
-			print("walk (forced after landing from jump)")
 		else:
 			$AnimatedSprite3D.play("idle")
 			anim_state = "idle"
-			print("idle (forced after landing from jump)")
 
 	move_and_slide()
 
@@ -76,34 +73,25 @@ func _physics_process(delta):
 		if anim_state != "jump":
 			$AnimatedSprite3D.play("jump")
 			anim_state = "jump"
-			print("jump")
 	elif not on_floor:
 		if anim_state != "fall":
 			$AnimatedSprite3D.play("fall")
 			anim_state = "fall"
-			print("fall")
 	elif is_moving:
 		if anim_state != "walk":
 			$AnimatedSprite3D.play("walk")
 			anim_state = "walk"
-			print("walk")
 	else:
 		if anim_state != "idle":
 			$AnimatedSprite3D.play("idle")
 			anim_state = "idle"
-			print("idle")
-	
-	print("Current anim_state:", anim_state, " is_jumping:", is_jumping, " on_floor:", on_floor)
 
 func _on_anim_finished(anim_name):
-	print("Animation finished:", anim_name)
 	if anim_name == "jump":
 		is_jumping = false
-		print("Jump animation finished! is_jumping set to false.")
 		if not is_on_floor():
 			$AnimatedSprite3D.play("fall")
 			anim_state = "fall"
-			print("fall (from signal)")
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body == self:

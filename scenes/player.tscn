@@ -123,7 +123,7 @@ transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.329251, 7.0201
 sprite_frames = SubResource("SpriteFrames_ur7pv")
 animation = &"land"
 autoplay = "idle"
-frame_progress = 0.484808
+frame_progress = 0.290461
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.122592, 7.17769, 0.00203322)
