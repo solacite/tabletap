@@ -86,7 +86,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("8_fulsm")
 }],
-"loop": true,
+"loop": false,
 "name": &"land",
 "speed": 6.0
 }, {
@@ -121,9 +121,9 @@ script = ExtResource("1_3vyb7")
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.329251, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
-animation = &"land"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.290461
+frame_progress = 0.212835
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.122592, 7.17769, 0.00203322)
