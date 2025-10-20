@@ -28,7 +28,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"fall",
-"speed": 6.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 8.0,
@@ -72,9 +72,23 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_qfm1y")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("10_60mlk")
+}, {
+"duration": 0.8,
+"texture": ExtResource("9_4r5pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fulsm")
+}],
+"loop": true,
+"name": &"land",
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.1,
@@ -107,9 +121,9 @@ script = ExtResource("1_3vyb7")
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.329251, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
-animation = &"idle"
+animation = &"land"
 autoplay = "idle"
-frame_progress = 0.642576
+frame_progress = 0.484808
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.122592, 7.17769, 0.00203322)

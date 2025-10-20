@@ -15,9 +15,15 @@ const LOADING_SCREEN = preload("res://scenes/ui/loading_screen.tscn")
 var respawn_point: Vector3 = Vector3(-91.69894, -31.41502, 60.24416)
 var pivot
 
+# Animation state management
+var is_jumping = false
+var anim_state = ""
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	pivot = $Pivot
+	# Connect to animation_finished signal
+	$AnimatedSprite3D.connect("animation_finished", Callable(self, "_on_anim_finished"))
 
 func _input(event):
 	if event is InputEventMouseMotion:
@@ -40,20 +46,64 @@ func _physics_process(delta):
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
 
-	# gravity + jump
-	if not is_on_floor():
+	var on_floor = is_on_floor()
+	
+	if not on_floor:
 		velocity.y -= ProjectSettings.get_setting("physics/3d/default_gravity") * delta
 	else:
 		if Input.is_action_just_pressed("ui_accept"):
 			velocity.y = jump_velocity
+			is_jumping = true
+	
+	if on_floor and anim_state == "jump":
+		# If landed and still playing jump, force to idle or walk
+		is_jumping = false
+		if abs(velocity.x) > 0.01 or abs(velocity.z) > 0.01:
+			$AnimatedSprite3D.play("walk")
+			anim_state = "walk"
+			print("walk (forced after landing from jump)")
+		else:
+			$AnimatedSprite3D.play("idle")
+			anim_state = "idle"
+			print("idle (forced after landing from jump)")
 
 	move_and_slide()
-	
+
 	var is_moving = abs(velocity.x) > 0.01 or abs(velocity.z) > 0.01
-	if is_moving:
-		$AnimatedSprite3D.play("walk")
+
+	# Animation control
+	if is_jumping:
+		if anim_state != "jump":
+			$AnimatedSprite3D.play("jump")
+			anim_state = "jump"
+			print("jump")
+	elif not on_floor:
+		if anim_state != "fall":
+			$AnimatedSprite3D.play("fall")
+			anim_state = "fall"
+			print("fall")
+	elif is_moving:
+		if anim_state != "walk":
+			$AnimatedSprite3D.play("walk")
+			anim_state = "walk"
+			print("walk")
 	else:
-		$AnimatedSprite3D.play("idle")
+		if anim_state != "idle":
+			$AnimatedSprite3D.play("idle")
+			anim_state = "idle"
+			print("idle")
+	
+	print("Current anim_state:", anim_state, " is_jumping:", is_jumping, " on_floor:", on_floor)
+
+func _on_anim_finished(anim_name):
+	print("Animation finished:", anim_name)
+	if anim_name == "jump":
+		is_jumping = false
+		print("Jump animation finished! is_jumping set to false.")
+		if not is_on_floor():
+			$AnimatedSprite3D.play("fall")
+			anim_state = "fall"
+			print("fall (from signal)")
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body == self:
