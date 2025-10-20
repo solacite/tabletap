@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3tpwvr4hy2rj"
-path.s3tc="res://.godot/imported/jun walk 2.png-f424a2e43ffda8457d32cdbca66e9fe9.s3tc.ctex"
+uid="uid://cf73oqfn42gx8"
+path.s3tc="res://.godot/imported/jun walk 4.png-592ed4593022adfcb14ac077a302855f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/jun walk/jun walk 2.png"
-dest_files=["res://.godot/imported/jun walk 2.png-f424a2e43ffda8457d32cdbca66e9fe9.s3tc.ctex"]
+source_file="res://assets/jun/jun walk/jun walk 4.png"
+dest_files=["res://.godot/imported/jun walk 4.png-592ed4593022adfcb14ac077a302855f.s3tc.ctex"]
 
 [params]
 

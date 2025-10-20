@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5ommfpbnhn8s"
-path.s3tc="res://.godot/imported/jun idle 3.png-e0cc3c78db72a0d89e112a4b5e30cada.s3tc.ctex"
+path.s3tc="res://.godot/imported/jun idle 3.png-2aac15504d104a16ea31ebf1b1d214f0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/jun idle/jun idle 3.png"
-dest_files=["res://.godot/imported/jun idle 3.png-e0cc3c78db72a0d89e112a4b5e30cada.s3tc.ctex"]
+source_file="res://assets/jun/jun idle/jun idle 3.png"
+dest_files=["res://.godot/imported/jun idle 3.png-2aac15504d104a16ea31ebf1b1d214f0.s3tc.ctex"]
 
 [params]
 

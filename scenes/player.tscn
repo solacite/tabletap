@@ -1,15 +1,15 @@
 [gd_scene load_steps=13 format=3 uid="uid://8s556elrrtdg"]
 
 [ext_resource type="Script" uid="uid://c4ck3ib27roto" path="res://scripts/player.gd" id="1_3vyb7"]
-[ext_resource type="Texture2D" uid="uid://c8uwor77jh2fd" path="res://assets/jun idle/jun idle 1.png" id="2_y4r1p"]
-[ext_resource type="Texture2D" uid="uid://cqkfsdl08hfyi" path="res://assets/jun idle/jun idle 2.png" id="3_d2wvv"]
-[ext_resource type="Texture2D" uid="uid://b5ommfpbnhn8s" path="res://assets/jun idle/jun idle 3.png" id="4_3v2ag"]
-[ext_resource type="Texture2D" uid="uid://xuhf725n47wm" path="res://assets/jun idle/jun idle 4.png" id="5_jej6c"]
-[ext_resource type="Texture2D" uid="uid://bj83pho6ngoon" path="res://assets/jun walk/jun walk 1.png" id="6_y4r1p"]
-[ext_resource type="Texture2D" uid="uid://b3tpwvr4hy2rj" path="res://assets/jun walk/jun walk 2.png" id="7_d2wvv"]
-[ext_resource type="Texture2D" uid="uid://cop6lsbx53n32" path="res://assets/jun walk/jun walk 3.png" id="8_3v2ag"]
-[ext_resource type="Texture2D" uid="uid://cf73oqfn42gx8" path="res://assets/jun walk/jun walk 4.png" id="9_jej6c"]
-[ext_resource type="Texture2D" uid="uid://diraokt8l1hu" path="res://assets/jun walk/jun walk 5.png" id="10_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://c8uwor77jh2fd" path="res://assets/jun/jun idle/jun idle 1.png" id="2_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://cqkfsdl08hfyi" path="res://assets/jun/jun idle/jun idle 2.png" id="3_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://b5ommfpbnhn8s" path="res://assets/jun/jun idle/jun idle 3.png" id="4_3v2ag"]
+[ext_resource type="Texture2D" uid="uid://xuhf725n47wm" path="res://assets/jun/jun idle/jun idle 4.png" id="5_jej6c"]
+[ext_resource type="Texture2D" uid="uid://bj83pho6ngoon" path="res://assets/jun/jun walk/jun walk 1.png" id="6_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://b3tpwvr4hy2rj" path="res://assets/jun/jun walk/jun walk 2.png" id="7_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://cop6lsbx53n32" path="res://assets/jun/jun walk/jun walk 3.png" id="8_3v2ag"]
+[ext_resource type="Texture2D" uid="uid://cf73oqfn42gx8" path="res://assets/jun/jun walk/jun walk 4.png" id="9_jej6c"]
+[ext_resource type="Texture2D" uid="uid://diraokt8l1hu" path="res://assets/jun/jun walk/jun walk 5.png" id="10_f1ej7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ur7pv"]
 animations = [{
@@ -35,6 +35,11 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 6.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.1,
@@ -67,9 +72,8 @@ script = ExtResource("1_3vyb7")
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.329251, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
-animation = &"walk"
+animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.613292
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.122592, 7.17769, 0.00203322)
