@@ -65,7 +65,6 @@ func start_screen_shake():
 func _physics_process(delta):
 	# Movement input
 	var inp_dir = Input.get_vector("move_left", "move_right", "move_fwd", "move_bkwd")
-	print("inp_dir:", inp_dir)
 	var direction = Vector3.ZERO
 	direction.x = inp_dir.x
 	direction.z = inp_dir.y
@@ -77,7 +76,6 @@ func _physics_process(delta):
 	var on_floor = is_on_floor()
 	var just_landed = on_floor and not was_on_floor
 	var is_moving = abs(velocity.x) > 0.01 or abs(velocity.z) > 0.01
-	print("velocity:", velocity, " is_moving:", is_moving, " anim_state:", anim_state)
 
 	# Apply gravity if not on floor
 	if not on_floor:
@@ -89,12 +87,10 @@ func _physics_process(delta):
 	if on_floor and Input.is_action_just_pressed("ui_accept"):
 		velocity.y = jump_velocity
 		$AnimatedSprite3D.play("jump")
-		print("Switching to: jump")
 		anim_state = "jump"
 		land_playing = false
 	elif just_landed:
 		$AnimatedSprite3D.play("land")
-		print("Switching to: land")
 		anim_state = "land"
 		land_playing = true
 		start_screen_shake()
@@ -102,33 +98,27 @@ func _physics_process(delta):
 		pass
 	elif not on_floor and anim_state != "fall" and anim_state != "jump":
 		$AnimatedSprite3D.play("fall")
-		print("Switching to: fall")
 		anim_state = "fall"
 	elif on_floor and is_moving and anim_state != "walk":
 		$AnimatedSprite3D.play("walk")
-		print("Switching to: walk")
 		anim_state = "walk"
 	elif on_floor and not is_moving and anim_state != "idle":
 		$AnimatedSprite3D.play("idle")
-		print("Switching to: idle")
 		anim_state = "idle"
 
 	was_on_floor = on_floor
 
 func _on_anim_finished():
 	var anim_name = $AnimatedSprite3D.animation
-	print("Animation finished:", anim_name)
 	if anim_name == "land":
 		land_playing = false
 		var on_floor = is_on_floor()
 		var is_moving = abs(velocity.x) > 0.01 or abs(velocity.z) > 0.01
 		if on_floor and is_moving:
 			$AnimatedSprite3D.play("walk")
-			print("Switching to: walk (after land)")
 			anim_state = "walk"
 		elif on_floor:
 			$AnimatedSprite3D.play("idle")
-			print("Switching to: idle (after land)")
 			anim_state = "idle"
 	# After jump, fall anim will be handled by state machine
 
