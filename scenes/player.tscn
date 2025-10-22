@@ -121,9 +121,8 @@ script = ExtResource("1_3vyb7")
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.329251, 7.02015, 0)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
-animation = &"idle"
+animation = &"fall"
 autoplay = "idle"
-frame_progress = 0.845326
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.135, 0, 0, 0, 1.135, 0, 0, 0, 1.135, -0.122592, 7.17769, 0.00203322)

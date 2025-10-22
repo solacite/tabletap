@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://8dt7ku57js8a"]
+[gd_scene load_steps=19 format=3 uid="uid://8dt7ku57js8a"]
 
 [ext_resource type="Script" uid="uid://bmyig2pywafin" path="res://scripts/platformer_player.gd" id="1_qfb68"]
 [ext_resource type="Texture2D" uid="uid://c875vhif7m20m" path="res://assets/jun/jun jump/jun jump 5.png" id="2_hesyn"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b5ommfpbnhn8s" path="res://assets/jun/jun idle/jun idle 3.png" id="4_l2t3u"]
 [ext_resource type="Texture2D" uid="uid://bj83pho6ngoon" path="res://assets/jun/jun walk/jun walk 1.png" id="6_qsstr"]
 [ext_resource type="Texture2D" uid="uid://dkhxjvlbxvft6" path="res://assets/jun/jun jump/jun jump 1.png" id="7_1cok6"]
+[ext_resource type="Texture2D" uid="uid://xuhf725n47wm" path="res://assets/jun/jun idle/jun idle 4.png" id="7_e0u2k"]
 [ext_resource type="Texture2D" uid="uid://b3tpwvr4hy2rj" path="res://assets/jun/jun walk/jun walk 2.png" id="7_l2t3u"]
 [ext_resource type="Texture2D" uid="uid://ss1x7hm3ak4v" path="res://assets/jun/jun jump/jun jump 2.png" id="8_7ynf8"]
 [ext_resource type="Texture2D" uid="uid://cop6lsbx53n32" path="res://assets/jun/jun walk/jun walk 3.png" id="8_58u3m"]
@@ -40,10 +41,10 @@ animations = [{
 "texture": ExtResource("4_l2t3u")
 }, {
 "duration": 0.8,
-"texture": ExtResource("4_l2t3u")
+"texture": ExtResource("7_e0u2k")
 }, {
 "duration": 0.6,
-"texture": ExtResource("3_qsstr")
+"texture": ExtResource("4_l2t3u")
 }, {
 "duration": 0.6,
 "texture": ExtResource("3_qsstr")
@@ -56,16 +57,16 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_1cok6")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("8_7ynf8")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("9_f7fis")
 }, {
-"duration": 1.0,
+"duration": 0.7,
 "texture": ExtResource("10_gwnfu")
 }, {
-"duration": 1.0,
+"duration": 0.9,
 "texture": ExtResource("2_hesyn")
 }, {
 "duration": 1.0,
@@ -73,13 +74,13 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("9_f7fis")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("8_7ynf8")
 }, {
 "duration": 1.0,
@@ -87,9 +88,12 @@ animations = [{
 }],
 "loop": true,
 "name": &"land",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
+"duration": 1.1,
+"texture": ExtResource("10_kulyq")
+}, {
 "duration": 1.1,
 "texture": ExtResource("6_qsstr")
 }, {
@@ -101,9 +105,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("9_5ylrc")
-}, {
-"duration": 1.1,
-"texture": ExtResource("10_kulyq")
 }],
 "loop": true,
 "name": &"walk",
@@ -119,7 +120,7 @@ script = ExtResource("1_qfb68")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.11, 0.11)
 sprite_frames = SubResource("SpriteFrames_v057a")
-animation = &"fall"
+animation = &"walk"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
