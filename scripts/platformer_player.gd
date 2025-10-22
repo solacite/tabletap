@@ -82,7 +82,7 @@ func handle_normal_movement(delta: float):
 		velocity.y += gravity * delta
 
 	# jump only if on ground
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if (Input.is_action_just_pressed("jump") or Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_UP)) and is_on_floor():
 		velocity.y = -JUMP_VELOCITY
 
 	# horizontal mvmt input
@@ -126,7 +126,7 @@ func update_animations(on_floor: bool, just_landed: bool, is_moving: bool):
 	elif on_floor and is_moving and anim_state != "walk":
 		animated_sprite.play("walk")
 		anim_state = "walk"
-		animated_sprite.flip_h = velocity.x < 0
+		animated_sprite.flip_h = velocity.x > 0
 	# idle
 	elif on_floor and not is_moving and anim_state != "idle":
 		animated_sprite.play("idle")
