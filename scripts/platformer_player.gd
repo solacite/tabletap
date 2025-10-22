@@ -84,40 +84,31 @@ func handle_normal_movement(delta: float):
 
 func update_animations(on_floor: bool, just_landed: bool, is_moving: bool):
 	if on_floor and Input.is_action_just_pressed("jump"):
-		print("jump")
 		animated_sprite.play("jump")
 		anim_state = "jump"
 		land_playing = false
 	elif just_landed:
-		print("just landed")
 		animated_sprite.play("land")
 		anim_state = "land"
 		land_playing = true
 	elif land_playing:
-		print("land is playing")
 		return
 	elif not on_floor and velocity.y > 0 and anim_state != "fall":
-		print("fall")
 		animated_sprite.play("fall")
 		anim_state = "fall"
 	elif not on_floor and velocity.y < 0 and anim_state != "jump":
-		print("jump")
 		animated_sprite.play("jump")
 		anim_state = "jump"
 	elif on_floor and is_moving and anim_state != "walk":
-		print("walk")
 		animated_sprite.play("walk")
 		anim_state = "walk"
 		animated_sprite.flip_h = velocity.x < 0
 	elif on_floor and not is_moving and anim_state != "idle":
-		print("idle")
 		animated_sprite.play("idle")
 		anim_state = "idle"
 
 func _on_animated_sprite_2d_animation_finished() -> void:
-	print("anim finished")
 	if animated_sprite.animation == "land":
-		print("land playing should be false now")
 		land_playing = false
 		var on_floor = is_on_floor()
 		var is_moving = abs(velocity.x) > 0.01
