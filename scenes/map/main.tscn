@@ -82,14 +82,14 @@ light_indirect_energy = 1.31
 transform = Transform3D(0.100965, 0, 0, 0, 0.100965, 0, 0, 0, 0.100965, -71.95, -38.99, 65.724)
 
 [node name="Player" parent="." instance=ExtResource("3_jhpig")]
-transform = Transform3D(0.129475, 0, 0, 0, 0.129475, 0, 0, 0, 0.129475, -89.1282, -31.5662, 61.953)
+transform = Transform3D(0.129475, 0, 0, 0, 0.129475, 0, 0, 0, 0.129475, -89.1282, -31.5944, 61.953)
 safe_margin = 0.005
 
 [node name="Respawn" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.355, -47.6595, 83.7388)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Respawn"]
-transform = Transform3D(196.128, 0, 0, 0, 1, 0, 0, 0, 1, -24.0874, 7.25735, -7.67292)
+transform = Transform3D(196.128, 0, 0, 0, 1, 0, 0, 0, 1, -24.0874, 5.6145, -7.67292)
 shape = SubResource("BoxShape3D_0wfyh")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Respawn"]
