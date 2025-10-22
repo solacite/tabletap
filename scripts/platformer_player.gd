@@ -22,20 +22,12 @@ func _ready():
 	add_to_group("Player")
 	respawn_position = global_position
 
-	# check sprite node exists
-	if not animated_sprite:
-		print("warn: animatedsprite2d not found! ensure named 'AnimatedSprite2D'")
-
 	# find tilemap auto
 	call_deferred("find_tilemap")
 
 func find_tilemap():
 	var scene_root = get_tree().current_scene
 	tilemap = search_for_tilemap(scene_root)
-	if tilemap:
-		print("found tilemap: ", tilemap.name)
-	else:
-		print("warn: no tilemap found!")
 
 func search_for_tilemap(node: Node) -> TileMap:
 	if node is TileMap:
@@ -54,7 +46,6 @@ func check_checkpoint():
 	if tile_data and tile_data.get_custom_data("is_checkpoint"):
 		if respawn_position != global_position:
 			respawn_position = global_position
-			print("checkpoint reached at: ", respawn_position)
 
 func respawn():
 	global_position = respawn_position
