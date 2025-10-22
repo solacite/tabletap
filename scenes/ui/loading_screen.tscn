@@ -1,9 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://4kjgckfgkd6u"]
+[gd_scene load_steps=9 format=3 uid="uid://4kjgckfgkd6u"]
 
 [ext_resource type="Texture2D" uid="uid://gl0wkwwlx8uj" path="res://assets/main menu/title char/title_char1.png" id="1_s2kth"]
+[ext_resource type="Shader" uid="uid://bamtqgjp1q1wy" path="res://shaders/loading_screen.gdshader" id="1_s41fs"]
 [ext_resource type="Texture2D" uid="uid://f2i7wclyo1u6" path="res://assets/main menu/title char/title_char2.png" id="2_s41fs"]
+[ext_resource type="Script" uid="uid://d1voyq3ps4vot" path="res://scripts/transition.gd" id="2_y06jl"]
 [ext_resource type="Texture2D" uid="uid://b05thdmqc87ou" path="res://assets/main menu/title char/title_char3.png" id="3_y06jl"]
 [ext_resource type="Texture2D" uid="uid://0a33lyjqkwyc" path="res://assets/main menu/title char/title_char4.png" id="4_g5iak"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y06jl"]
+shader = ExtResource("1_s41fs")
+shader_parameter/in_color = Vector4(0, 0, 0, 0)
+shader_parameter/out_color = Vector4(0, 0, 0, 0)
+shader_parameter/in_out = 0.0
+shader_parameter/position = 0.856
+shader_parameter/size = Vector2(16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5phy8"]
 animations = [{
@@ -34,9 +44,10 @@ animations = [{
 [node name="Node2D" type="CanvasLayer"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_y06jl")
 offset_right = 2193.0
 offset_bottom = 1340.0
-color = Color(0.933333, 0.74902, 0.513726, 1)
+script = ExtResource("2_y06jl")
 
 [node name="Char" type="AnimatedSprite2D" parent="."]
 position = Vector2(238, 981)
