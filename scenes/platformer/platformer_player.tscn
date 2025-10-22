@@ -72,7 +72,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_e0u2k")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
 "speed": 8.0
 }, {
@@ -86,7 +86,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_1cok6")
 }],
-"loop": true,
+"loop": false,
 "name": &"land",
 "speed": 6.0
 }, {
@@ -108,7 +108,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
+"speed": 6.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qfb68"]
@@ -120,7 +120,7 @@ script = ExtResource("1_qfb68")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.11, 0.11)
 sprite_frames = SubResource("SpriteFrames_v057a")
-animation = &"walk"
+animation = &"fall"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
