@@ -2,9 +2,22 @@
 
 [ext_resource type="Texture2D" uid="uid://mij1d21f3aj7" path="res://assets/buttons/play2.png" id="1_mlvod"]
 
-[node name="Overlay" type="CanvasLayer"]
+[node name="Overlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="Play2" type="Sprite2D" parent="."]
-position = Vector2(968, 542)
-scale = Vector2(0.315, 0.315)
+position = Vector2(1614, 1056)
+rotation = 0.0349066
+scale = Vector2(0.485, 0.485)
 texture = ExtResource("1_mlvod")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 1360.0
+offset_top = 872.0
+offset_right = 1450.0
+offset_bottom = 912.0
+rotation = -0.0552376
+scale = Vector2(2.705, 2.705)
+text = "hold a to"

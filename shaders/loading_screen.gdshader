@@ -13,7 +13,7 @@ void fragment() {
 
     float circle = length(cell_center_uv) * 0.7;
     float reveal = 1.0 - step(0.5, circle);
-
+	
     vec4 color = mix(in_color, out_color, in_out);
     COLOR = vec4(color.rgb * reveal, color.a * reveal);
 }
