@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmkg8jwe8gcxi"]
+
+[ext_resource type="Texture2D" uid="uid://cfg0a58nl3t7m" path="res://assets/bgs/game menu.png" id="1_pn2fu"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1097, 633)
+scale = Vector2(0.81, 0.81)
+texture = ExtResource("1_pn2fu")

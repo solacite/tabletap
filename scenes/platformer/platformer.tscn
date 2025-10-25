@@ -40,8 +40,8 @@ sources/6 = SubResource("TileSetAtlasSource_bareo")
 
 [node name="Sky" type="Sprite2D" parent="."]
 modulate = Color(0.935762, 0.970643, 1, 1)
-position = Vector2(-118, -353.009)
-scale = Vector2(2.53734, 3.6931)
+position = Vector2(753.001, 144.5)
+scale = Vector2(5.50146, 10.3576)
 texture = ExtResource("1_pwwsi")
 
 [node name="Player" parent="." instance=ExtResource("2_qtlw1")]
