@@ -1,3 +1,21 @@
-[gd_scene format=3 uid="uid://d3e2t61uvinon"]
+[gd_scene load_steps=3 format=3 uid="uid://d3e2t61uvinon"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://b4soouf03ujvg" path="res://assets/bgs/credits.png" id="1_4y82v"]
+[ext_resource type="Texture2D" uid="uid://5h4lj8bobdnp" path="res://assets/bgs/largercredits.png" id="2_ff4am"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Credits" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(933, 444)
+scale = Vector2(0.73, 0.73)
+texture = ExtResource("1_4y82v")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Largercredits" type="Sprite2D" parent="."]
+position = Vector2(961, 535)
+scale = Vector2(0.545, 0.545)
+texture = ExtResource("2_ff4am")
