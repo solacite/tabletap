@@ -79,20 +79,82 @@ text = "2. the choice"
 
 [node name="3" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -1106.0
+offset_left = -1051.0
 offset_top = 548.0
-offset_right = -603.0
+offset_right = -548.0
 offset_bottom = 643.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/normal_font_size = 40
 text = "3. left or right?"
 
 [node name="4" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -57.0
-offset_top = 303.0
-offset_right = 446.0
-offset_bottom = 398.0
+offset_left = -204.0
+offset_top = 321.0
+offset_right = 299.0
+offset_bottom = 416.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 40
+text = "4. fl*ppy b*rd"
+
+[node name="5" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 559.0
+offset_top = 377.0
+offset_right = 759.0
+offset_bottom = 572.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 30
+text = "5. the only way is up"
+
+[node name="6" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -492.0
+offset_top = -985.0
+offset_right = -118.0
+offset_bottom = -890.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 60
-text = "4. fl*ppy b*rd"
+text = "6. the tower"
+
+[node name="4v2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -1137.0
+offset_top = 377.0
+offset_right = -634.0
+offset_bottom = 472.0
+rotation = -1.57079
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 40
+text = "4. we go up"
+
+[node name="5v2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -1425.0
+offset_top = -53.0
+offset_right = -922.0
+offset_bottom = 42.0
+rotation = -1.57079
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 40
+text = "5. a little more"
+
+[node name="7" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -1855.0
+offset_top = -2443.0
+offset_right = -1481.0
+offset_bottom = -2348.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 60
+text = "7. the fall"
+
+[node name="8" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -1552.0
+offset_top = 155.0
+offset_right = -1178.0
+offset_bottom = 250.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "8. the caves"
