@@ -18,14 +18,18 @@ func show_loading_screen():
 	get_tree().current_scene.add_child(loading_screen)
 	return loading_screen
 
+# start btn
 func _on_start_pressed() -> void:
 	transition_to_scene("res://scenes/map/main.tscn")
 
+# settings btn
 func _on_settings_pressed() -> void:
 	transition_to_scene("res://scenes/menu/settings.tscn")
 	
+# help btn
 func _on_help_pressed() -> void:
 	transition_to_scene("res://scenes/menu/help.tscn")
 
+# credits btn
 func _on_credits_pressed() -> void:
 	transition_to_scene("res://scenes/menu/credits.tscn")
