@@ -22,10 +22,10 @@ func _on_start_pressed() -> void:
 	transition_to_scene("res://scenes/map/main.tscn")
 
 func _on_settings_pressed() -> void:
-	pass
+	transition_to_scene("res://scenes/menu/settings.tscn")
 	
 func _on_help_pressed() -> void:
-	pass
+	transition_to_scene("res://scenes/menu/help.tscn")
 
 func _on_credits_pressed() -> void:
 	transition_to_scene("res://scenes/menu/credits.tscn")
