@@ -149,6 +149,16 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 60
 text = "7. the fall"
 
+[node name="7v2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 368.0
+offset_top = -2464.0
+offset_right = 742.0
+offset_bottom = -2369.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 60
+text = "7. wrong way"
+
 [node name="8" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = -1552.0

@@ -14,6 +14,7 @@ scale = Vector2(0.485, 0.485)
 texture = ExtResource("1_mlvod")
 
 [node name="Press" type="RichTextLabel" parent="."]
+modulate = Color(0.933333, 0.74902, 0.509804, 1)
 layout_mode = 0
 offset_left = 1366.0
 offset_top = 821.0

@@ -1,5 +1,6 @@
-[gd_scene load_steps=27 format=3 uid="uid://dl8subouq8tno"]
+[gd_scene load_steps=28 format=3 uid="uid://dl8subouq8tno"]
 
+[ext_resource type="Script" uid="uid://dp2v56l637c8" path="res://scripts/main.gd" id="1_awv4p"]
 [ext_resource type="Script" uid="uid://bk1hcmyue30iw" path="res://scripts/load_ui.gd" id="1_vey37"]
 [ext_resource type="PackedScene" uid="uid://dp3ivbla8rfeu" path="res://scenes/map/lobbydraft.tscn" id="2_awv4p"]
 [ext_resource type="PackedScene" uid="uid://8s556elrrtdg" path="res://scenes/player.tscn" id="3_jhpig"]
@@ -62,6 +63,7 @@ size = Vector3(5.07251, 0.184204, 2.65379)
 size = Vector3(2.58105, 0.241333, 2.82373)
 
 [node name="Main" type="Node3D"]
+script = ExtResource("1_awv4p")
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("1_vey37")
