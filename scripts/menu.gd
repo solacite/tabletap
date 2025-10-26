@@ -2,6 +2,10 @@ extends Node2D
 
 var LoadingScreen = preload("res://scenes/ui/loading_screen.tscn")
 
+func _input(event):
+	if Input.is_action_just_pressed("start"):
+		get_tree().change_scene_to_file("res://scenes/menu/game_menu.tscn")
+
 func transition_to_scene(target_scene_path: String):
 	var loading_screen = show_loading_screen()
 	ResourceLoader.load_threaded_request(target_scene_path)
@@ -21,15 +25,3 @@ func show_loading_screen():
 # start btn
 func _on_start_pressed() -> void:
 	transition_to_scene("res://scenes/map/main.tscn")
-
-# settings btn
-func _on_settings_pressed() -> void:
-	transition_to_scene("res://scenes/menu/settings.tscn")
-	
-# help btn
-func _on_help_pressed() -> void:
-	transition_to_scene("res://scenes/menu/help.tscn")
-
-# credits btn
-func _on_credits_pressed() -> void:
-	transition_to_scene("res://scenes/menu/credits.tscn")

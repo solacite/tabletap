@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://d3e2t61uvinon"]
+[gd_scene load_steps=6 format=3 uid="uid://d3e2t61uvinon"]
 
+[ext_resource type="Script" uid="uid://oowyeopphqxa" path="res://scripts/credits.gd" id="1_0s65u"]
 [ext_resource type="Texture2D" uid="uid://b4soouf03ujvg" path="res://assets/bgs/credits.png" id="1_4y82v"]
 [ext_resource type="Texture2D" uid="uid://dsahgg4t0fwvd" path="res://assets/buttons/normal_blue_arrow.png" id="2_0l22u"]
 [ext_resource type="Texture2D" uid="uid://4nciqwvwlihl" path="res://assets/bgs/newcreds3.png" id="3_0l22u"]
 [ext_resource type="FontFile" uid="uid://ptttgtkmv3e" path="res://fonts/CherryBombOne-Regular.ttf" id="3_drpar"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_0s65u")
 
 [node name="Credits" type="Sprite2D" parent="."]
 visible = false
