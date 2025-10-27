@@ -16,11 +16,11 @@ texture = ExtResource("1_mlvod")
 [node name="Press" type="RichTextLabel" parent="."]
 modulate = Color(0.933333, 0.74902, 0.509804, 1)
 layout_mode = 0
-offset_left = 1366.0
-offset_top = 821.0
-offset_right = 1811.0
-offset_bottom = 960.0
-rotation = -0.0186121
+offset_left = 1367.0
+offset_top = 828.0
+offset_right = 1812.0
+offset_bottom = 967.0
+rotation = -0.0284213
 theme_override_fonts/normal_font = ExtResource("2_aqp87")
 theme_override_font_sizes/normal_font_size = 80
 text = "press q to"
