@@ -41,13 +41,13 @@ sources/6 = SubResource("TileSetAtlasSource_bareo")
 
 [node name="Sky" type="Sprite2D" parent="."]
 modulate = Color(0.935762, 0.970643, 1, 1)
-position = Vector2(505, -1915)
+position = Vector2(419, -2000)
 scale = Vector2(1.66309, 4.43407)
 texture = ExtResource("1_pwwsi")
 
 [node name="Player" parent="." instance=ExtResource("2_qtlw1")]
 z_index = 10
-position = Vector2(-321, 442)
+position = Vector2(-139, 53)
 scale = Vector2(0.53, 0.53)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -399,162 +399,162 @@ text = "今回はワンホップ
 [node name="13 now what" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = -299.0
-offset_top = -4078.0
+offset_top = -4099.0
 offset_right = 287.0
-offset_bottom = -3983.0
+offset_bottom = -4004.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "13. now what?"
 
-[node name="13 now what2" type="RichTextLabel" parent="Text/11-20"]
+[node name="13 さて、どうする？" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -598.0
-offset_top = -8156.0
-offset_right = -12.0
-offset_bottom = -8061.0
+offset_left = -216.0
+offset_top = -4042.0
+offset_right = 370.0
+offset_bottom = -3947.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 50
-text = "13. now what?"
+theme_override_font_sizes/normal_font_size = 25
+text = "さて、どうする？"
 
 [node name="14 onward" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -322.0
-offset_top = -3674.0
-offset_right = 264.0
-offset_bottom = -3579.0
+offset_left = -330.0
+offset_top = -3705.0
+offset_right = 256.0
+offset_bottom = -3610.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "14. onward"
 
-[node name="14 onward2" type="RichTextLabel" parent="Text/11-20"]
+[node name="14 前へ" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -644.0
-offset_top = -7348.0
-offset_right = -58.0
-offset_bottom = -7253.0
+offset_left = -234.0
+offset_top = -3648.0
+offset_right = 352.0
+offset_bottom = -3553.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 50
-text = "14. onward"
+theme_override_font_sizes/normal_font_size = 30
+text = "前へ"
 
 [node name="15 which one" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 251.0
-offset_top = -4626.0
-offset_right = 837.0
-offset_bottom = -4531.0
+offset_left = 175.0
+offset_top = -4661.0
+offset_right = 761.0
+offset_bottom = -4566.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "15. which one?"
 
-[node name="15 which one2" type="RichTextLabel" parent="Text/11-20"]
+[node name="15 どれ" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 502.0
-offset_top = -9252.0
-offset_right = 1088.0
-offset_bottom = -9157.0
+offset_left = 265.0
+offset_top = -4598.0
+offset_right = 851.0
+offset_bottom = -4503.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 50
-text = "15. which one?"
+theme_override_font_sizes/normal_font_size = 30
+text = "どれ"
 
 [node name="16 leaps" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 408.0
-offset_top = -4868.0
-offset_right = 994.0
-offset_bottom = -4773.0
+offset_left = 410.0
+offset_top = -4909.0
+offset_right = 996.0
+offset_bottom = -4814.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "16. leaps"
 
-[node name="16 leaps2" type="RichTextLabel" parent="Text/11-20"]
+[node name="16 跳躍" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 816.0
-offset_top = -9736.0
-offset_right = 1402.0
-offset_bottom = -9641.0
+offset_left = 497.0
+offset_top = -4844.0
+offset_right = 1083.0
+offset_bottom = -4749.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 50
-text = "16. leaps"
+theme_override_font_sizes/normal_font_size = 30
+text = "跳躍"
 
 [node name="17 down" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 707.0
-offset_top = -5375.0
-offset_right = 1293.0
-offset_bottom = -5280.0
+offset_left = 689.0
+offset_top = -5402.0
+offset_right = 1275.0
+offset_bottom = -5307.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "17. down"
 
-[node name="17 down2" type="RichTextLabel" parent="Text/11-20"]
+[node name="17 ダウン" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 1414.0
-offset_top = -10750.0
-offset_right = 2000.0
-offset_bottom = -10655.0
+offset_left = 783.0
+offset_top = -5342.0
+offset_right = 1369.0
+offset_bottom = -5247.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 50
-text = "17. down"
+theme_override_font_sizes/normal_font_size = 35
+text = "ダウン"
 
 [node name="18 all over again" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 941.0
-offset_top = 913.0
-offset_right = 1527.0
-offset_bottom = 1008.0
+offset_left = 933.0
+offset_top = 902.0
+offset_right = 1519.0
+offset_bottom = 997.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "18. all over again"
 
-[node name="18 all over again2" type="RichTextLabel" parent="Text/11-20"]
+[node name="18 また最初から" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 1882.0
-offset_top = 1826.0
-offset_right = 2468.0
-offset_bottom = 1921.0
+offset_left = 1023.0
+offset_top = 959.0
+offset_right = 1609.0
+offset_bottom = 1054.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 50
-text = "18. all over again"
+theme_override_font_sizes/normal_font_size = 30
+text = "また最初から"
 
 [node name="19 teeth" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 1041.0
-offset_top = -466.0
-offset_right = 1627.0
-offset_bottom = -371.0
+offset_left = 1034.0
+offset_top = -511.0
+offset_right = 1620.0
+offset_bottom = -416.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 60
 text = "19. teeth"
 
-[node name="19 teeth2" type="RichTextLabel" parent="Text/11-20"]
+[node name="19 歯" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 2082.0
-offset_top = -932.0
-offset_right = 2668.0
-offset_bottom = -837.0
+offset_left = 1136.0
+offset_top = -442.0
+offset_right = 1722.0
+offset_bottom = -347.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 60
-text = "19. teeth"
+theme_override_font_sizes/normal_font_size = 40
+text = "歯"
 
 [node name="20 high stakes" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 1015.0
-offset_top = -1203.0
-offset_right = 1604.0
-offset_bottom = -1079.0
+offset_left = 1044.0
+offset_top = -1260.0
+offset_right = 1633.0
+offset_bottom = -1136.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 70
 text = "20. high stakes"
 
-[node name="20 high stakes2" type="RichTextLabel" parent="Text/11-20"]
+[node name="20 ハイステークス" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 2030.0
-offset_top = -2406.0
-offset_right = 2619.0
-offset_bottom = -2282.0
+offset_left = 1168.0
+offset_top = -1179.0
+offset_right = 1757.0
+offset_bottom = -1055.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 70
-text = "20. high stakes"
+theme_override_font_sizes/normal_font_size = 45
+text = "ハイステークス"
 
 [node name="21-30" type="Node2D" parent="Text"]
 
