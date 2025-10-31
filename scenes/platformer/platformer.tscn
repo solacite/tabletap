@@ -190,10 +190,10 @@ text = "4. we go up"
 
 [node name="4 私たちは登る" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -1107.0
-offset_top = 400.0
-offset_right = -604.0
-offset_bottom = 495.0
+offset_left = -1102.0
+offset_top = 353.0
+offset_right = -599.0
+offset_bottom = 448.0
 rotation = -1.57079
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 20
@@ -201,25 +201,25 @@ text = "私たちは登る"
 
 [node name="5 a little more" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -1425.0
+offset_left = -1439.0
 offset_top = -53.0
-offset_right = -922.0
+offset_right = -936.0
 offset_bottom = 42.0
 rotation = -1.57079
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 40
 text = "5. a little more"
 
-[node name="5 a little more2" type="RichTextLabel" parent="Text"]
+[node name="5 もう少し" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -1478.01
-offset_top = 1372.0
-offset_right = -975.009
-offset_bottom = 1467.0
+offset_left = -1391.0
+offset_top = -98.0
+offset_right = -888.0
+offset_bottom = -3.0
 rotation = -1.57079
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 40
-text = "5. a little more"
+theme_override_font_sizes/normal_font_size = 30
+text = "もう少し"
 
 [node name="7 the fall" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
@@ -231,15 +231,15 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 60
 text = "7. the fall"
 
-[node name="7 the fall2" type="RichTextLabel" parent="Text"]
+[node name="7 秋" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -3710.0
-offset_top = -4886.0
-offset_right = -3336.0
-offset_bottom = -4791.0
+offset_left = -1775.0
+offset_top = -2368.0
+offset_right = -1401.0
+offset_bottom = -2273.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 60
-text = "7. the fall"
+theme_override_font_sizes/normal_font_size = 40
+text = "秋"
 
 [node name="7 wrong way" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
@@ -251,25 +251,55 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 60
 text = "7. wrong way"
 
+[node name="7 間違った方向" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 439.0
+offset_top = -2392.0
+offset_right = 813.0
+offset_bottom = -2297.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 40
+text = "間違った方向"
+
 [node name="8 the caves" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -1552.0
-offset_top = 155.0
-offset_right = -1178.0
-offset_bottom = 250.0
+offset_left = -1551.0
+offset_top = 142.0
+offset_right = -1177.0
+offset_bottom = 237.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "8. the caves"
 
+[node name="8 洞窟" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -1491.0
+offset_top = 203.0
+offset_right = -1117.0
+offset_bottom = 298.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 30
+text = "洞窟"
+
 [node name="9 diagonals" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -2302.0
-offset_top = 798.0
-offset_right = -1928.0
-offset_bottom = 893.0
+offset_left = -2308.0
+offset_top = 781.0
+offset_right = -1934.0
+offset_bottom = 876.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "9. diagonals"
+
+[node name="9 対角線" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -2246.0
+offset_top = 843.0
+offset_right = -1872.0
+offset_bottom = 938.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 30
+text = "対角線"
 
 [node name="10 dot dot dot" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
@@ -281,12 +311,32 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 60
 text = "10. dot dot dot"
 
+[node name="10 dot dot dot2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -3692.0
+offset_top = -5796.0
+offset_right = -3230.0
+offset_bottom = -5701.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 60
+text = "10. dot dot dot"
+
 [node name="11 take it back now y\'all" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 54.0
 offset_top = -3288.0
 offset_right = 640.0
 offset_bottom = -3193.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "11. take it back now y'all"
+
+[node name="11 take it back now y\'all2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 108.0
+offset_top = -6576.0
+offset_right = 694.0
+offset_bottom = -6481.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "11. take it back now y'all"
@@ -303,12 +353,34 @@ theme_override_font_sizes/normal_font_size = 50
 text = "12. one hop this time
 "
 
+[node name="12 one hop this time2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -6475.19
+offset_top = -5365.0
+offset_right = -5889.19
+offset_bottom = -5270.0
+rotation = -0.483617
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "12. one hop this time
+"
+
 [node name="13 now what" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = -299.0
 offset_top = -4078.0
 offset_right = 287.0
 offset_bottom = -3983.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "13. now what?"
+
+[node name="13 now what2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -598.0
+offset_top = -8156.0
+offset_right = -12.0
+offset_bottom = -8061.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "13. now what?"
@@ -323,12 +395,32 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "14. onward"
 
+[node name="14 onward2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -644.0
+offset_top = -7348.0
+offset_right = -58.0
+offset_bottom = -7253.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "14. onward"
+
 [node name="15 which one" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 251.0
 offset_top = -4626.0
 offset_right = 837.0
 offset_bottom = -4531.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "15. which one?"
+
+[node name="15 which one2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 502.0
+offset_top = -9252.0
+offset_right = 1088.0
+offset_bottom = -9157.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "15. which one?"
@@ -343,12 +435,32 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "16. leaps"
 
+[node name="16 leaps2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 816.0
+offset_top = -9736.0
+offset_right = 1402.0
+offset_bottom = -9641.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "16. leaps"
+
 [node name="17 down" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 707.0
 offset_top = -5375.0
 offset_right = 1293.0
 offset_bottom = -5280.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "17. down"
+
+[node name="17 down2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 1414.0
+offset_top = -10750.0
+offset_right = 2000.0
+offset_bottom = -10655.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "17. down"
@@ -363,6 +475,16 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "18. all over again"
 
+[node name="18 all over again2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 1882.0
+offset_top = 1826.0
+offset_right = 2468.0
+offset_bottom = 1921.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "18. all over again"
+
 [node name="19 teeth" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 1041.0
@@ -373,12 +495,32 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 60
 text = "19. teeth"
 
+[node name="19 teeth2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 2082.0
+offset_top = -932.0
+offset_right = 2668.0
+offset_bottom = -837.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 60
+text = "19. teeth"
+
 [node name="20 high stakes" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 1015.0
 offset_top = -1203.0
 offset_right = 1604.0
 offset_bottom = -1079.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 70
+text = "20. high stakes"
+
+[node name="20 high stakes2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 2030.0
+offset_top = -2406.0
+offset_right = 2619.0
+offset_bottom = -2282.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 70
 text = "20. high stakes"
@@ -394,12 +536,33 @@ theme_override_font_sizes/normal_font_size = 70
 text = "21. stack
 "
 
+[node name="21 stack2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 2442.0
+offset_top = -5312.0
+offset_right = 2760.0
+offset_bottom = -5188.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 70
+text = "21. stack
+"
+
 [node name="22 stairs" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 1032.0
 offset_top = -4057.0
 offset_right = 1350.0
 offset_bottom = -3933.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 70
+text = "22. stairs"
+
+[node name="22 stairs2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 2064.0
+offset_top = -8114.0
+offset_right = 2382.0
+offset_bottom = -7990.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 70
 text = "22. stairs"
@@ -414,6 +577,16 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "23. left to right"
 
+[node name="23 left to right2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 2508.0
+offset_top = -9506.0
+offset_right = 2909.0
+offset_bottom = -9426.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "23. left to right"
+
 [node name="24 simplicity" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 1395.0
@@ -424,12 +597,32 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "24. simplicity"
 
+[node name="24 simplicity2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 2790.0
+offset_top = -10468.0
+offset_right = 3119.0
+offset_bottom = -10387.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "24. simplicity"
+
 [node name="25 choices" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 2113.0
 offset_top = -5442.0
 offset_right = 2442.0
 offset_bottom = -5361.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "25. choices	"
+
+[node name="25 choices2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 4226.0
+offset_top = -10884.0
+offset_right = 4555.0
+offset_bottom = -10803.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "25. choices	"
@@ -445,6 +638,17 @@ theme_override_font_sizes/normal_font_size = 50
 text = "26. thorns
 "
 
+[node name="26 thorns2" type="RichTextLabel" parent="Text"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 4158.0
+offset_top = -8990.0
+offset_right = 4487.0
+offset_bottom = -8909.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 50
+text = "26. thorns
+"
+
 [node name="27 precision" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 2464.0
@@ -455,7 +659,7 @@ theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 50
 text = "27. precision"
 
-[node name="27 precision2" type="RichTextLabel" parent="Text"]
+[node name="27 precision2a" type="RichTextLabel" parent="Text"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = 2464.0
 offset_top = -3853.0
