@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bks3un11o8ey6"]
+[gd_scene load_steps=15 format=3 uid="uid://bks3un11o8ey6"]
 
 [ext_resource type="Texture2D" uid="uid://cvld5ay568pax" path="res://assets/general/even lighter sky.png" id="1_pwwsi"]
 [ext_resource type="Texture2D" uid="uid://c755hfdi3bw8f" path="res://assets/tileset/blue block.png" id="2_6fuoi"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://caf6dguh523un" path="res://assets/tileset/orange block.png" id="4_i0asj"]
 [ext_resource type="Texture2D" uid="uid://dvmbrf5jg87no" path="res://assets/tileset/white block.png" id="5_xiwqk"]
 [ext_resource type="FontFile" uid="uid://ptttgtkmv3e" path="res://fonts/CherryBombOne-Regular.ttf" id="7_qtlw1"]
+[ext_resource type="FontFile" uid="uid://bpmfagcni1rev" path="res://fonts/YuseiMagic-Regular.ttf" id="8_i0asj"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_6fuoi"]
 
@@ -41,13 +42,13 @@ sources/6 = SubResource("TileSetAtlasSource_bareo")
 
 [node name="Sky" type="Sprite2D" parent="."]
 modulate = Color(0.935762, 0.970643, 1, 1)
-position = Vector2(1058.5, -2038)
-scale = Vector2(1.95142, 4.43407)
+position = Vector2(2923.5, -2370)
+scale = Vector2(3.16138, 4.94049)
 texture = ExtResource("1_pwwsi")
 
 [node name="Player" parent="." instance=ExtResource("2_qtlw1")]
 z_index = 10
-position = Vector2(3715, 368)
+position = Vector2(3682, 309)
 scale = Vector2(0.53, 0.53)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -77,7 +78,7 @@ offset_left = -108.0
 offset_top = -47.0
 offset_right = 395.0
 offset_bottom = 48.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 40
 text = "始まり"
 metadata/_edit_use_anchors_ = true
@@ -99,7 +100,7 @@ offset_left = -923.0
 offset_top = -203.0
 offset_right = -420.0
 offset_bottom = -108.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 40
 text = "選択"
 metadata/_edit_use_anchors_ = true
@@ -121,16 +122,40 @@ offset_left = -1009.0
 offset_top = 596.0
 offset_right = -506.0
 offset_bottom = 691.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 20
 text = "左か右か"
 metadata/_edit_use_anchors_ = true
 
+[node name="4 we go up" type="RichTextLabel" parent="Text/1-10"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -1154.0
+offset_top = 396.0
+offset_right = -651.0
+offset_bottom = 491.0
+rotation = -1.57079
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 40
+text = "4. we go up"
+metadata/_edit_use_anchors_ = true
+
+[node name="4 私たちは登る" type="RichTextLabel" parent="Text/1-10"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -1098.0
+offset_top = 346.0
+offset_right = -595.0
+offset_bottom = 441.0
+rotation = -1.57079
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
+theme_override_font_sizes/normal_font_size = 20
+text = "私たちは登る"
+metadata/_edit_use_anchors_ = true
+
 [node name="4 flappy bird" type="RichTextLabel" parent="Text/1-10"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -203.0
+offset_left = -280.0
 offset_top = 308.0
-offset_right = 84.9998
+offset_right = 7.99957
 offset_bottom = 371.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 40
@@ -139,11 +164,11 @@ metadata/_edit_use_anchors_ = true
 
 [node name="4 フラッピーバード" type="RichTextLabel" parent="Text/1-10"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -151.0
-offset_top = 358.0
-offset_right = -6.00024
-offset_bottom = 392.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+offset_left = -229.0
+offset_top = 359.0
+offset_right = -84.0005
+offset_bottom = 393.0
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 20
 text = "フラッピーバード"
 metadata/_edit_use_anchors_ = true
@@ -165,55 +190,9 @@ offset_left = 487.0
 offset_top = 413.0
 offset_right = 799.0
 offset_bottom = 608.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 15
-text = "上に行くしかない"
-metadata/_edit_use_anchors_ = true
-
-[node name="6 the tower" type="RichTextLabel" parent="Text/1-10"]
-modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -492.0
-offset_top = -985.0
-offset_right = -118.0
-offset_bottom = -890.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 60
-text = "6. the tower"
-metadata/_edit_use_anchors_ = true
-
-[node name="6 塔" type="RichTextLabel" parent="Text/1-10"]
-modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -420.0
-offset_top = -907.0
-offset_right = -46.0002
-offset_bottom = -812.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 40
-text = "塔"
-metadata/_edit_use_anchors_ = true
-
-[node name="4 we go up" type="RichTextLabel" parent="Text/1-10"]
-modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -1154.0
-offset_top = 396.0
-offset_right = -651.0
-offset_bottom = 491.0
-rotation = -1.57079
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 40
-text = "4. we go up"
-metadata/_edit_use_anchors_ = true
-
-[node name="4 私たちは登る" type="RichTextLabel" parent="Text/1-10"]
-modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -1102.0
-offset_top = 353.0
-offset_right = -599.0
-offset_bottom = 448.0
-rotation = -1.57079
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 20
-text = "私たちは登る"
+text = "上に行くしかない"
 metadata/_edit_use_anchors_ = true
 
 [node name="5 a little more" type="RichTextLabel" parent="Text/1-10"]
@@ -240,6 +219,28 @@ theme_override_font_sizes/normal_font_size = 30
 text = "もう少し"
 metadata/_edit_use_anchors_ = true
 
+[node name="6 the tower" type="RichTextLabel" parent="Text/1-10"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -492.0
+offset_top = -985.0
+offset_right = -118.0
+offset_bottom = -890.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 60
+text = "6. the tower"
+metadata/_edit_use_anchors_ = true
+
+[node name="6 塔" type="RichTextLabel" parent="Text/1-10"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = -421.0
+offset_top = -918.0
+offset_right = -47.0004
+offset_bottom = -823.0
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
+theme_override_font_sizes/normal_font_size = 40
+text = "塔"
+metadata/_edit_use_anchors_ = true
+
 [node name="7 the fall" type="RichTextLabel" parent="Text/1-10"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
 offset_left = -1855.0
@@ -257,7 +258,7 @@ offset_left = -1775.0
 offset_top = -2368.0
 offset_right = -1401.0
 offset_bottom = -2273.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 40
 text = "秋"
 metadata/_edit_use_anchors_ = true
@@ -279,7 +280,7 @@ offset_left = 439.0
 offset_top = -2392.0
 offset_right = 813.0
 offset_bottom = -2297.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 40
 text = "間違った方向"
 metadata/_edit_use_anchors_ = true
@@ -301,7 +302,7 @@ offset_left = -1491.0
 offset_top = 203.0
 offset_right = -1117.0
 offset_bottom = 298.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "洞窟"
 metadata/_edit_use_anchors_ = true
@@ -323,7 +324,7 @@ offset_left = -2246.0
 offset_top = 843.0
 offset_right = -1872.0
 offset_bottom = 938.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "対角線"
 metadata/_edit_use_anchors_ = true
@@ -345,7 +346,7 @@ offset_left = -1737.0
 offset_top = -2824.0
 offset_right = -1275.0
 offset_bottom = -2729.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 40
 text = "ドット ドット ドット"
 metadata/_edit_use_anchors_ = true
@@ -368,7 +369,7 @@ offset_left = 138.0
 offset_top = -3290.0
 offset_right = 724.0
 offset_bottom = -3195.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "さあ、みんな、今すぐ取り戻せ"
 
@@ -391,7 +392,7 @@ offset_top = -3502.0
 offset_right = -1894.0
 offset_bottom = -3407.0
 rotation = -0.483617
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 35
 text = "今回はワンホップ
 "
@@ -408,11 +409,11 @@ text = "13. now what?"
 
 [node name="13 さて、どうする？" type="RichTextLabel" parent="Text/11-20"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = -216.0
-offset_top = -4042.0
-offset_right = 370.0
-offset_bottom = -3947.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+offset_left = -215.0
+offset_top = -4035.0
+offset_right = 371.0
+offset_bottom = -3940.0
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 25
 text = "さて、どうする？"
 
@@ -432,7 +433,7 @@ offset_left = -234.0
 offset_top = -3648.0
 offset_right = 352.0
 offset_bottom = -3553.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "前へ"
 
@@ -452,7 +453,7 @@ offset_left = 265.0
 offset_top = -4598.0
 offset_right = 851.0
 offset_bottom = -4503.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "どれ"
 
@@ -472,7 +473,7 @@ offset_left = 497.0
 offset_top = -4844.0
 offset_right = 1083.0
 offset_bottom = -4749.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "跳躍"
 
@@ -492,7 +493,7 @@ offset_left = 783.0
 offset_top = -5342.0
 offset_right = 1369.0
 offset_bottom = -5247.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 35
 text = "ダウン"
 
@@ -512,7 +513,7 @@ offset_left = 1023.0
 offset_top = 959.0
 offset_right = 1609.0
 offset_bottom = 1054.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "また最初から"
 
@@ -532,7 +533,7 @@ offset_left = 1136.0
 offset_top = -442.0
 offset_right = 1722.0
 offset_bottom = -347.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 40
 text = "歯"
 
@@ -552,7 +553,7 @@ offset_left = 1168.0
 offset_top = -1179.0
 offset_right = 1757.0
 offset_bottom = -1055.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 45
 text = "ハイステークス"
 
@@ -560,10 +561,10 @@ text = "ハイステークス"
 
 [node name="21 stack" type="RichTextLabel" parent="Text/21-30"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 1227.0
-offset_top = -2697.0
-offset_right = 1545.0
-offset_bottom = -2573.0
+offset_left = 1226.0
+offset_top = -2732.0
+offset_right = 1544.0
+offset_bottom = -2608.0
 theme_override_fonts/normal_font = ExtResource("7_qtlw1")
 theme_override_font_sizes/normal_font_size = 70
 text = "21. stack
@@ -571,11 +572,11 @@ text = "21. stack
 
 [node name="21 スタック" type="RichTextLabel" parent="Text/21-30"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 1347.0
-offset_top = -2618.0
-offset_right = 1665.0
-offset_bottom = -2494.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+offset_left = 1346.0
+offset_top = -2651.0
+offset_right = 1664.0
+offset_bottom = -2527.0
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 45
 text = "スタック"
 
@@ -595,7 +596,7 @@ offset_left = 1161.0
 offset_top = -4002.0
 offset_right = 1479.0
 offset_bottom = -3878.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 45
 text = "階段"
 
@@ -615,7 +616,7 @@ offset_left = 1334.0
 offset_top = -4736.0
 offset_right = 1735.0
 offset_bottom = -4656.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 35
 text = "左から右へ"
 
@@ -635,7 +636,7 @@ offset_left = 1479.0
 offset_top = -5226.0
 offset_right = 1808.0
 offset_bottom = -5145.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 35
 text = "簡素さ"
 
@@ -655,8 +656,8 @@ offset_left = 2199.0
 offset_top = -5397.0
 offset_right = 2528.0
 offset_bottom = -5316.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
-theme_override_font_sizes/normal_font_size = 35
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
+theme_override_font_sizes/normal_font_size = 30
 text = "選択肢"
 
 [node name="26 thorns" type="RichTextLabel" parent="Text/21-30"]
@@ -672,11 +673,11 @@ text = "26. thorns
 
 [node name="26 とげ" type="RichTextLabel" parent="Text/21-30"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 2174.0
-offset_top = -4460.0
-offset_right = 2503.0
-offset_bottom = -4379.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+offset_left = 2168.0
+offset_top = -4455.0
+offset_right = 2497.0
+offset_bottom = -4374.0
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 35
 text = "とげ"
 
@@ -696,7 +697,7 @@ offset_left = 2500.0
 offset_top = -3808.0
 offset_right = 2829.0
 offset_bottom = -3727.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "精度"
 
@@ -716,7 +717,7 @@ offset_left = 2891.0
 offset_top = -3258.0
 offset_right = 3220.0
 offset_bottom = -3177.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "ひねり"
 
@@ -736,7 +737,7 @@ offset_left = 2320.0
 offset_top = -2213.0
 offset_right = 2773.0
 offset_bottom = -2132.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 30
 text = "行き来"
 
@@ -753,12 +754,12 @@ text = "30. wheee"
 
 [node name="30 わーい！" type="RichTextLabel" parent="Text/21-30"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 2104.0
-offset_top = -383.0
-offset_right = 2557.0
-offset_bottom = -302.0
+offset_left = 2109.0
+offset_top = -464.0
+offset_right = 2562.0
+offset_bottom = -383.0
 rotation = -1.5708
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 35
 text = "わーい！"
 
@@ -780,7 +781,7 @@ offset_left = 2464.0
 offset_top = 680.0
 offset_right = 2917.0
 offset_bottom = 761.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 45
 text = "プラス"
 
@@ -800,7 +801,7 @@ offset_left = 3191.0
 offset_top = -733.0
 offset_right = 3644.0
 offset_bottom = -652.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 25
 text = "長い道のり"
 
@@ -820,7 +821,7 @@ offset_left = 3194.0
 offset_top = -3489.0
 offset_right = 3647.0
 offset_bottom = -3408.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 25
 text = "半歩"
 
@@ -836,11 +837,11 @@ text = "33. continuation"
 
 [node name="34 続き" type="RichTextLabel" parent="Text/31-40"]
 modulate = Color(0.7505, 0.85025, 0.95, 1)
-offset_left = 3338.0
-offset_top = -5363.0
-offset_right = 3791.0
-offset_bottom = -5282.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+offset_left = 3340.0
+offset_top = -5368.0
+offset_right = 3793.0
+offset_bottom = -5287.0
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 25
 text = "続き"
 
@@ -860,6 +861,26 @@ offset_left = 3692.0
 offset_top = 925.0
 offset_right = 4145.0
 offset_bottom = 1006.0
-theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
 theme_override_font_sizes/normal_font_size = 20
 text = "蛇と梯子"
+
+[node name="35 ups and downs" type="RichTextLabel" parent="Text/31-40"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 4611.0
+offset_top = 389.0
+offset_right = 4900.0
+offset_bottom = 501.0
+theme_override_fonts/normal_font = ExtResource("7_qtlw1")
+theme_override_font_sizes/normal_font_size = 30
+text = "35. ups and downs"
+
+[node name="35 浮き沈み" type="RichTextLabel" parent="Text/31-40"]
+modulate = Color(0.7505, 0.85025, 0.95, 1)
+offset_left = 4660.0
+offset_top = 429.0
+offset_right = 5113.0
+offset_bottom = 510.0
+theme_override_fonts/normal_font = ExtResource("8_i0asj")
+theme_override_font_sizes/normal_font_size = 20
+text = "浮き沈み"
