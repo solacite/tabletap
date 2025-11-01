@@ -8,3 +8,5 @@
 position = Vector2(1097, 633)
 scale = Vector2(0.81, 0.81)
 texture = ExtResource("1_pn2fu")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
